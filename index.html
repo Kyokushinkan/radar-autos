@@ -43,6 +43,7 @@ tr:hover{background:#f8fafc} .badge{display:inline-block;font-size:10px;font-wei
 </div>
 <div class="tabs">
 <button id="bn" class="active" onclick="tab('neo')">NeoAuto · Evidencia A</button>
+<button id="bf" onclick="tab('flip')">FLIP · Reventa (31)</button>
 <button id="ba" onclick="tab('active')">VMC · Activos (28)</button>
 <button id="bh" onclick="tab('history')">VMC · Histórico (4)</button></div>
 
@@ -235,6 +236,475 @@ tr:hover{background:#f8fafc} .badge{display:inline-block;font-size:10px;font-wei
 <td>$25,900</td><td>$20,900</td><td><b>-23.9%</b></td>
 <td>79,198</td><td>-1%</td><td>3</td><td>13.50</td><td><a href="https://neoauto.com/auto/seminuevo/mazda-cx-5-2020-1867635" target="_blank">Ver anuncio ↗</a></td></tr></tbody></table></div>
 <div class="note">INVESTIGAR es prioridad de revisión, no recomendación de compra.</div></section>
+
+<section id="flip" class="panel">
+
+<div class="cards">
+<div class="card"><b>1</b>cumple precio objetivo</div>
+<div class="card"><b>4</b>negociación cercana ≤ 5%</div>
+<div class="card"><b>26</b>fuera de rango</div>
+<div class="card"><b>15</b>insuficientes A+</div>
+</div>
+
+<div class="controls"><input id="qf" placeholder="Buscar vehículo, estado o ID..." oninput="filterRows('flipBody','qf')"></div>
+
+<div class="note">
+<b>FLIP V1.5 · ECONOMIA_PRELIMINAR</b> — Evidence A+ exige al menos 3 comparables técnicamente compatibles. 
+Objetivo económico actual: ROI ≥ 10% y utilidad ≥ US$ 1,500. 
+Mientras los costos configurados permanezcan en cero, utilidad y ROI son preliminares. 
+Los estados sirven para priorizar investigación y negociación; no constituyen recomendación automática de compra.
+</div>
+
+<div class="tablewrap"><table>
+<thead><tr>
+<th>Estado</th><th>Vehículo</th><th>Publicado</th><th>Salida A+</th>
+<th>Compra máx.</th><th>Acción</th><th>Utilidad prelim.</th><th>ROI</th>
+<th>Costo máx.</th><th>N A+</th><th>Km vs A+</th><th>Score FLIP</th><th>Anuncio</th>
+</tr></thead>
+<tbody id="flipBody"><tr data-search="mazda cx-5 2022 1884897 cumple">
+<td><span class="badge good">CUMPLE</span></td>
+<td><b>MAZDA CX-5 2022</b><small>NeoAuto 1884897</small></td>
+<td>$23,000</td>
+<td><b>$25,495</b><small>Mediana Evidence A+</small></td>
+<td><b>$23,177</b></td>
+<td>Holgura $177</td>
+<td>$2,495</td>
+<td><b>10.8%</b></td>
+<td>$177.27<small>Límite: ROI</small></td>
+<td>4</td>
+<td>+27%</td>
+<td>46.10</td>
+<td><a href="https://neoauto.com/auto/usado/mazda-cx-5-2022-1884897" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="toyota corolla cross 2025 1883336 negociación cercana">
+<td><span class="badge warn">NEGOCIACIÓN CERCANA</span></td>
+<td><b>TOYOTA COROLLA CROSS 2025</b><small>NeoAuto 1883336</small></td>
+<td>$26,500</td>
+<td><b>$28,900</b><small>Mediana Evidence A+</small></td>
+<td><b>$26,273</b></td>
+<td>Bajar $227 (0.9%)</td>
+<td>$2,400</td>
+<td><b>9.1%</b></td>
+<td>$-227.27<small>Límite: ROI</small></td>
+<td>3</td>
+<td>+407%</td>
+<td>35.43</td>
+<td><a href="https://neoauto.com/auto/seminuevo/toyota-corolla-cross-2025-1883336" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="toyota rav4 2023 1879414 negociación cercana">
+<td><span class="badge warn">NEGOCIACIÓN CERCANA</span></td>
+<td><b>TOYOTA RAV4 2023</b><small>NeoAuto 1879414</small></td>
+<td>$33,500</td>
+<td><b>$36,000</b><small>Mediana Evidence A+</small></td>
+<td><b>$32,727</b></td>
+<td>Bajar $773 (2.3%)</td>
+<td>$2,500</td>
+<td><b>7.5%</b></td>
+<td>$-772.73<small>Límite: ROI</small></td>
+<td>4</td>
+<td>+115%</td>
+<td>34.15</td>
+<td><a href="https://neoauto.com/auto/seminuevo/toyota-rav4-2023-1879414" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="mazda cx-5 2022 1860644 negociación cercana">
+<td><span class="badge warn">NEGOCIACIÓN CERCANA</span></td>
+<td><b>MAZDA CX-5 2022</b><small>NeoAuto 1860644</small></td>
+<td>$24,000</td>
+<td><b>$25,495</b><small>Mediana Evidence A+</small></td>
+<td><b>$23,177</b></td>
+<td>Bajar $823 (3.4%)</td>
+<td>$1,495</td>
+<td><b>6.2%</b></td>
+<td>$-822.73<small>Límite: ROI</small></td>
+<td>4</td>
+<td>-5%</td>
+<td>43.23</td>
+<td><a href="https://neoauto.com/auto/usado/mazda-cx-5-2022-1860644" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="toyota rav4 2024 1886783 negociación cercana">
+<td><span class="badge warn">NEGOCIACIÓN CERCANA</span></td>
+<td><b>TOYOTA RAV4 2024</b><small>NeoAuto 1886783</small></td>
+<td>$34,000</td>
+<td><b>$36,000</b><small>Mediana Evidence A+</small></td>
+<td><b>$32,727</b></td>
+<td>Bajar $1,273 (3.7%)</td>
+<td>$2,000</td>
+<td><b>5.9%</b></td>
+<td>$-1,272.73<small>Límite: ROI</small></td>
+<td>5</td>
+<td>-0%</td>
+<td>45.22</td>
+<td><a href="https://neoauto.com/auto/seminuevo/toyota-rav4-2024-1886783" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="toyota corolla cross 2023 1882472 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>TOYOTA COROLLA CROSS 2023</b><small>NeoAuto 1882472</small></td>
+<td>$23,500</td>
+<td><b>$24,500</b><small>Mediana Evidence A+</small></td>
+<td><b>$22,273</b></td>
+<td>Bajar $1,227 (5.2%)</td>
+<td>$1,000</td>
+<td><b>4.3%</b></td>
+<td>$-1,227.27<small>Límite: ROI</small></td>
+<td>5</td>
+<td>+29%</td>
+<td>28.64</td>
+<td><a href="https://neoauto.com/auto/seminuevo/toyota-corolla-cross-2023-1882472" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="toyota corolla cross 2026 1883983 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>TOYOTA COROLLA CROSS 2026</b><small>NeoAuto 1883983</small></td>
+<td>$27,800</td>
+<td><b>$28,900</b><small>Mediana Evidence A+</small></td>
+<td><b>$26,273</b></td>
+<td>Bajar $1,527 (5.5%)</td>
+<td>$1,100</td>
+<td><b>4.0%</b></td>
+<td>$-1,527.27<small>Límite: ROI</small></td>
+<td>3</td>
+<td>-66%</td>
+<td>34.76</td>
+<td><a href="https://neoauto.com/auto/usado/toyota-corolla-cross-2026-1883983" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="kia sportage 2023 1886599 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>KIA SPORTAGE 2023</b><small>NeoAuto 1886599</small></td>
+<td>$25,900</td>
+<td><b>$26,900</b><small>Mediana Evidence A+</small></td>
+<td><b>$24,455</b></td>
+<td>Bajar $1,445 (5.6%)</td>
+<td>$1,000</td>
+<td><b>3.9%</b></td>
+<td>$-1,445.45<small>Límite: ROI</small></td>
+<td>3</td>
+<td>+81%</td>
+<td>19.01</td>
+<td><a href="https://neoauto.com/auto/seminuevo/kia-sportage-2023-1886599" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="toyota rav4 2025 1878521 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>TOYOTA RAV4 2025</b><small>NeoAuto 1878521</small></td>
+<td>$39,000</td>
+<td><b>$40,500</b><small>Mediana Evidence A+</small></td>
+<td><b>$36,818</b></td>
+<td>Bajar $2,182 (5.6%)</td>
+<td>$1,500</td>
+<td><b>3.9%</b></td>
+<td>$-2,181.82<small>Límite: ROI</small></td>
+<td>3</td>
+<td>-70%</td>
+<td>35.98</td>
+<td><a href="https://neoauto.com/auto/usado/toyota-rav4-2025-1878521" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="toyota corolla cross 2025 1883404 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>TOYOTA COROLLA CROSS 2025</b><small>NeoAuto 1883404</small></td>
+<td>$23,900</td>
+<td><b>$24,500</b><small>Mediana Evidence A+</small></td>
+<td><b>$22,273</b></td>
+<td>Bajar $1,627 (6.8%)</td>
+<td>$600</td>
+<td><b>2.5%</b></td>
+<td>$-1,627.27<small>Límite: ROI</small></td>
+<td>6</td>
+<td>-37%</td>
+<td>34.89</td>
+<td><a href="https://neoauto.com/auto/seminuevo/toyota-corolla-cross-2025-1883404" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="toyota corolla cross 2024 1877228 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>TOYOTA COROLLA CROSS 2024</b><small>NeoAuto 1877228</small></td>
+<td>$24,000</td>
+<td><b>$24,500</b><small>Mediana Evidence A+</small></td>
+<td><b>$22,273</b></td>
+<td>Bajar $1,727 (7.2%)</td>
+<td>$500</td>
+<td><b>2.1%</b></td>
+<td>$-1,727.27<small>Límite: ROI</small></td>
+<td>7</td>
+<td>+28%</td>
+<td>25.07</td>
+<td><a href="https://neoauto.com/auto/seminuevo/toyota-corolla-cross-2024-1877228" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="toyota corolla cross 2025 1884365 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>TOYOTA COROLLA CROSS 2025</b><small>NeoAuto 1884365</small></td>
+<td>$24,000</td>
+<td><b>$24,500</b><small>Mediana Evidence A+</small></td>
+<td><b>$22,273</b></td>
+<td>Bajar $1,727 (7.2%)</td>
+<td>$500</td>
+<td><b>2.1%</b></td>
+<td>$-1,727.27<small>Límite: ROI</small></td>
+<td>6</td>
+<td>-89%</td>
+<td>33.57</td>
+<td><a href="https://neoauto.com/auto/seminuevo/toyota-corolla-cross-2025-1884365" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="kia sportage 2024 1881330 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>KIA SPORTAGE 2024</b><small>NeoAuto 1881330</small></td>
+<td>$26,500</td>
+<td><b>$26,900</b><small>Mediana Evidence A+</small></td>
+<td><b>$24,455</b></td>
+<td>Bajar $2,045 (7.7%)</td>
+<td>$400</td>
+<td><b>1.5%</b></td>
+<td>$-2,045.45<small>Límite: ROI</small></td>
+<td>3</td>
+<td>-50%</td>
+<td>26.50</td>
+<td><a href="https://neoauto.com/auto/seminuevo/kia-sportage-2024-1881330" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="mazda cx-5 2022 1884215 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>MAZDA CX-5 2022</b><small>NeoAuto 1884215</small></td>
+<td>$24,990</td>
+<td><b>$25,000</b><small>Mediana Evidence A+</small></td>
+<td><b>$22,727</b></td>
+<td>Bajar $2,263 (9.1%)</td>
+<td>$10</td>
+<td><b>0.0%</b></td>
+<td>$-2,262.73<small>Límite: ROI</small></td>
+<td>4</td>
+<td>+10%</td>
+<td>19.13</td>
+<td><a href="https://neoauto.com/auto/seminuevo/mazda-cx-5-2022-1884215" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="kia sportage 2024 1879544 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>KIA SPORTAGE 2024</b><small>NeoAuto 1879544</small></td>
+<td>$26,900</td>
+<td><b>$26,500</b><small>Mediana Evidence A+</small></td>
+<td><b>$24,091</b></td>
+<td>Bajar $2,809 (10.4%)</td>
+<td>$-400</td>
+<td><b>-1.5%</b></td>
+<td>$-2,809.09<small>Límite: ROI</small></td>
+<td>3</td>
+<td>-23%</td>
+<td>21.50</td>
+<td><a href="https://neoauto.com/auto/seminuevo/kia-sportage-2024-1879544" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="toyota corolla cross 2024 1880632 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>TOYOTA COROLLA CROSS 2024</b><small>NeoAuto 1880632</small></td>
+<td>$24,500</td>
+<td><b>$24,000</b><small>Mediana Evidence A+</small></td>
+<td><b>$21,818</b></td>
+<td>Bajar $2,682 (10.9%)</td>
+<td>$-500</td>
+<td><b>-2.0%</b></td>
+<td>$-2,681.82<small>Límite: ROI</small></td>
+<td>7</td>
+<td>+61%</td>
+<td>13.50</td>
+<td><a href="https://neoauto.com/auto/seminuevo/toyota-corolla-cross-2024-1880632" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="toyota corolla cross 2024 1887020 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>TOYOTA COROLLA CROSS 2024</b><small>NeoAuto 1887020</small></td>
+<td>$24,500</td>
+<td><b>$24,000</b><small>Mediana Evidence A+</small></td>
+<td><b>$21,818</b></td>
+<td>Bajar $2,682 (10.9%)</td>
+<td>$-500</td>
+<td><b>-2.0%</b></td>
+<td>$-2,681.82<small>Límite: ROI</small></td>
+<td>7</td>
+<td>-9%</td>
+<td>28.50</td>
+<td><a href="https://neoauto.com/auto/seminuevo/toyota-corolla-cross-2024-1887020" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="toyota corolla cross 2026 1882557 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>TOYOTA COROLLA CROSS 2026</b><small>NeoAuto 1882557</small></td>
+<td>$28,900</td>
+<td><b>$27,800</b><small>Mediana Evidence A+</small></td>
+<td><b>$25,273</b></td>
+<td>Bajar $3,627 (12.6%)</td>
+<td>$-1,100</td>
+<td><b>-3.8%</b></td>
+<td>$-3,627.27<small>Límite: ROI</small></td>
+<td>3</td>
+<td>-68%</td>
+<td>21.50</td>
+<td><a href="https://neoauto.com/auto/seminuevo/toyota-corolla-cross-2026-1882557" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="toyota corolla cross 2025 1887025 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>TOYOTA COROLLA CROSS 2025</b><small>NeoAuto 1887025</small></td>
+<td>$25,500</td>
+<td><b>$24,250</b><small>Mediana Evidence A+</small></td>
+<td><b>$22,045</b></td>
+<td>Bajar $3,455 (13.6%)</td>
+<td>$-1,250</td>
+<td><b>-4.9%</b></td>
+<td>$-3,454.55<small>Límite: ROI</small></td>
+<td>6</td>
+<td>-76%</td>
+<td>26.00</td>
+<td><a href="https://neoauto.com/auto/seminuevo/toyota-corolla-cross-2025-1887025" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="mazda cx-5 2023 1880044 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>MAZDA CX-5 2023</b><small>NeoAuto 1880044</small></td>
+<td>$26,000</td>
+<td><b>$24,495</b><small>Mediana Evidence A+</small></td>
+<td><b>$22,268</b></td>
+<td>Bajar $3,732 (14.3%)</td>
+<td>$-1,505</td>
+<td><b>-5.8%</b></td>
+<td>$-3,731.82<small>Límite: ROI</small></td>
+<td>4</td>
+<td>-43%</td>
+<td>23.00</td>
+<td><a href="https://neoauto.com/auto/usado/mazda-cx-5-2023-1880044" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="toyota corolla cross 2026 1876512 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>TOYOTA COROLLA CROSS 2026</b><small>NeoAuto 1876512</small></td>
+<td>$30,000</td>
+<td><b>$27,800</b><small>Mediana Evidence A+</small></td>
+<td><b>$25,273</b></td>
+<td>Bajar $4,727 (15.8%)</td>
+<td>$-2,200</td>
+<td><b>-7.3%</b></td>
+<td>$-4,727.27<small>Límite: ROI</small></td>
+<td>3</td>
+<td>+192%</td>
+<td>6.50</td>
+<td><a href="https://neoauto.com/auto/seminuevo/toyota-corolla-cross-2026-1876512" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="mazda cx-5 2023 1885518 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>MAZDA CX-5 2023</b><small>NeoAuto 1885518</small></td>
+<td>$26,500</td>
+<td><b>$24,495</b><small>Mediana Evidence A+</small></td>
+<td><b>$22,268</b></td>
+<td>Bajar $4,232 (16.0%)</td>
+<td>$-2,005</td>
+<td><b>-7.6%</b></td>
+<td>$-4,231.82<small>Límite: ROI</small></td>
+<td>4</td>
+<td>-4%</td>
+<td>23.00</td>
+<td><a href="https://neoauto.com/auto/seminuevo/mazda-cx-5-2023-1885518" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="toyota corolla cross 2024 1876248 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>TOYOTA COROLLA CROSS 2024</b><small>NeoAuto 1876248</small></td>
+<td>$26,500</td>
+<td><b>$24,000</b><small>Mediana Evidence A+</small></td>
+<td><b>$21,818</b></td>
+<td>Bajar $4,682 (17.7%)</td>
+<td>$-2,500</td>
+<td><b>-9.4%</b></td>
+<td>$-4,681.82<small>Límite: ROI</small></td>
+<td>7</td>
+<td>+10%</td>
+<td>22.50</td>
+<td><a href="https://neoauto.com/auto/seminuevo/toyota-corolla-cross-2024-1876248" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="toyota rav4 2023 1885666 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>TOYOTA RAV4 2023</b><small>NeoAuto 1885666</small></td>
+<td>$38,000</td>
+<td><b>$34,000</b><small>Mediana Evidence A+</small></td>
+<td><b>$30,909</b></td>
+<td>Bajar $7,091 (18.7%)</td>
+<td>$-4,000</td>
+<td><b>-10.5%</b></td>
+<td>$-7,090.91<small>Límite: ROI</small></td>
+<td>5</td>
+<td>-9%</td>
+<td>23.50</td>
+<td><a href="https://neoauto.com/auto/seminuevo/toyota-rav4-2023-1885666" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="kia sportage 2024 1874190 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>KIA SPORTAGE 2024</b><small>NeoAuto 1874190</small></td>
+<td>$30,000</td>
+<td><b>$26,500</b><small>Mediana Evidence A+</small></td>
+<td><b>$24,091</b></td>
+<td>Bajar $5,909 (19.7%)</td>
+<td>$-3,500</td>
+<td><b>-11.7%</b></td>
+<td>$-5,909.09<small>Límite: ROI</small></td>
+<td>3</td>
+<td>+30%</td>
+<td>11.50</td>
+<td><a href="https://neoauto.com/auto/seminuevo/kia-sportage-2024-1874190" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="toyota rav4 2025 1886528 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>TOYOTA RAV4 2025</b><small>NeoAuto 1886528</small></td>
+<td>$42,500</td>
+<td><b>$36,000</b><small>Mediana Evidence A+</small></td>
+<td><b>$32,727</b></td>
+<td>Bajar $9,773 (23.0%)</td>
+<td>$-6,500</td>
+<td><b>-15.3%</b></td>
+<td>$-9,772.73<small>Límite: ROI</small></td>
+<td>3</td>
+<td>-65%</td>
+<td>20.50</td>
+<td><a href="https://neoauto.com/auto/seminuevo/toyota-rav4-2025-1886528" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="toyota rav4 2024 1875900 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>TOYOTA RAV4 2024</b><small>NeoAuto 1875900</small></td>
+<td>$36,000</td>
+<td><b>$36,000</b><small>Mediana Evidence A+</small></td>
+<td><b>$32,727</b></td>
+<td>Bajar $3,273 (9.1%)</td>
+<td>$0</td>
+<td><b>0.0%</b></td>
+<td>$-3,272.73<small>Límite: ROI</small></td>
+<td>5</td>
+<td>+11%</td>
+<td>18.50</td>
+<td><a href="https://neoauto.com/auto/seminuevo/toyota-rav4-2024-1875900" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="toyota rav4 2025 1880960 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>TOYOTA RAV4 2025</b><small>NeoAuto 1880960</small></td>
+<td>$40,500</td>
+<td><b>$40,500</b><small>Mediana Evidence A+</small></td>
+<td><b>$36,818</b></td>
+<td>Bajar $3,682 (9.1%)</td>
+<td>$0</td>
+<td><b>0.0%</b></td>
+<td>$-3,681.82<small>Límite: ROI</small></td>
+<td>3</td>
+<td>-11%</td>
+<td>20.50</td>
+<td><a href="https://neoauto.com/auto/seminuevo/toyota-rav4-2025-1880960" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="toyota rav4 2025 1885649 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>TOYOTA RAV4 2025</b><small>NeoAuto 1885649</small></td>
+<td>$40,500</td>
+<td><b>$40,500</b><small>Mediana Evidence A+</small></td>
+<td><b>$36,818</b></td>
+<td>Bajar $3,682 (9.1%)</td>
+<td>$0</td>
+<td><b>0.0%</b></td>
+<td>$-3,681.82<small>Límite: ROI</small></td>
+<td>3</td>
+<td>+117%</td>
+<td>5.50</td>
+<td><a href="https://neoauto.com/auto/seminuevo/toyota-rav4-2025-1885649" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="toyota rav4 2025 1885971 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>TOYOTA RAV4 2025</b><small>NeoAuto 1885971</small></td>
+<td>$40,500</td>
+<td><b>$40,500</b><small>Mediana Evidence A+</small></td>
+<td><b>$36,818</b></td>
+<td>Bajar $3,682 (9.1%)</td>
+<td>$0</td>
+<td><b>0.0%</b></td>
+<td>$-3,681.82<small>Límite: ROI</small></td>
+<td>3</td>
+<td>+12%</td>
+<td>15.50</td>
+<td><a href="https://neoauto.com/auto/seminuevo/toyota-rav4-2025-1885971" target="_blank">Ver anuncio ?</a></td>
+</tr><tr data-search="toyota rav4 2024 1886570 fuera de rango">
+<td><span class="badge muted">FUERA DE RANGO</span></td>
+<td><b>TOYOTA RAV4 2024</b><small>NeoAuto 1886570</small></td>
+<td>$36,000</td>
+<td><b>$36,000</b><small>Mediana Evidence A+</small></td>
+<td><b>$32,727</b></td>
+<td>Bajar $3,273 (9.1%)</td>
+<td>$0</td>
+<td><b>0.0%</b></td>
+<td>$-3,272.73<small>Límite: ROI</small></td>
+<td>5</td>
+<td>-59%</td>
+<td>23.50</td>
+<td><a href="https://neoauto.com/auto/seminuevo/toyota-rav4-2024-1886570" target="_blank">Ver anuncio ?</a></td>
+</tr></tbody>
+</table></div>
+
+<div class="note">
+<b>Costo máx.</b> es el presupuesto total adicional que el deal puede absorber al precio publicado 
+antes de incumplir el objetivo dominante de ROI o utilidad. Un valor negativo indica que el precio 
+publicado ya excede el nivel económico objetivo antes de incorporar costos reales.
+</div>
+
+</section>
 
 <section id="active" class="panel">
 <div class="cards"><div class="card"><b>28</b>ofertas activas</div><div class="card"><b>24</b>orden de captura</div>
@@ -659,6 +1129,6 @@ tr:hover{background:#f8fafc} .badge{display:inline-block;font-size:10px;font-wei
 </section>
 </div>
 <script>
-function tab(x){document.querySelectorAll('.panel').forEach(e=>e.classList.remove('active'));document.querySelectorAll('.tabs button').forEach(e=>e.classList.remove('active'));document.getElementById(x).classList.add('active');document.getElementById(x==='neo'?'bn':x==='active'?'ba':'bh').classList.add('active')}
+function tab(x){document.querySelectorAll('.panel').forEach(e=>e.classList.remove('active'));document.querySelectorAll('.tabs button').forEach(e=>e.classList.remove('active'));document.getElementById(x).classList.add('active');document.getElementById(x==='neo'?'bn':x==='flip'?'bf':x==='active'?'ba':'bh').classList.add('active')}
 function filterRows(body,input){let q=document.getElementById(input).value.toLowerCase();document.querySelectorAll('#'+body+' tr').forEach(r=>r.style.display=r.dataset.search.includes(q)?'':'none')}
 </script></body></html>
