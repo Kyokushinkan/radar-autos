@@ -39,7 +39,7 @@ tr:hover{background:#f8fafc} .badge{display:inline-block;font-size:10px;font-wei
 <div class="kpi"><b>131</b><span>Valorados V2</span></div>
 <div class="kpi"><b>48</b><span>Evidence A</span></div>
 <div class="kpi"><b>16</b><span>VMC activos</span></div>
-<div class="kpi"><b>21</b><span>Superbid activos</span></div>
+<div class="kpi"><b>21</b><span>Superbid · captura manual</span></div>
 </div>
 </div>
 <div class="tabs">
@@ -47,7 +47,7 @@ tr:hover{background:#f8fafc} .badge{display:inline-block;font-size:10px;font-wei
 <button id="bf" data-tab="flip" onclick="tab('flip')">FLIP · Reventa (33)</button>
 <button id="ba" data-tab="active" onclick="tab('active')">VMC · Activos (16)</button>
 <button id="bh" data-tab="history" onclick="tab('history')">VMC · Histórico (24)</button>
-<button id="bs" data-tab="superbid" onclick="tab('superbid')">Superbid · Activos (21)</button></div>
+<button id="bs" data-tab="superbid" onclick="tab('superbid')">Superbid · Manual (21)</button></div>
 
 <section id="neo" class="panel active">
 <div class="controls"><input id="qn" placeholder="Buscar vehículo..." oninput="filterRows('neoBody','qn')"></div>
@@ -979,9 +979,9 @@ publicado ya excede el nivel económico objetivo antes de incorporar costos real
 </section>
 
 <section id="superbid" class="panel">
-<div class="cards"><div class="card"><b>21</b>lotes activos según estado explícito de la fuente</div></div>
+<div class="cards"><div class="card"><b>21</b>lotes activos según última captura manual<small>Última captura: 22/09/2026 22:54 · hora Lima</small></div></div>
 <div class="controls"><input id="qs" placeholder="Buscar lote, vehículo, estado o ubicación..." oninput="filterRows('superbidBody','qs')"></div>
-<div class="note"><b>Fuente informativa.</b> El precio mostrado es precio/base de subasta y no constituye costo total ni valorización de mercado. Superbid todavía no participa en scoring ni comparables de Radar Autos. currentMinBid/currentMaxBid no se interpretan como pujas reales, la ausencia de un lote no se interpreta como venta y la ausencia de información legal no significa que el vehículo esté limpio.</div>
+<div class="note"><b>Fuente informativa · captura manual.</b> Superbid no se actualiza automáticamente con NeoAuto y VMC. Última captura: <b>22/09/2026 22:54</b> (hora Lima). El precio mostrado es precio/base de subasta y no constituye costo total ni valorización de mercado. Superbid todavía no participa en scoring ni comparables de Radar Autos. currentMinBid/currentMaxBid no se interpretan como pujas reales, la ausencia de un lote no se interpreta como venta y la ausencia de información legal no significa que el vehículo esté limpio.</div>
 <div class="tablewrap"><table><thead><tr>
 <th>Estado fuente</th><th>Título / lote</th><th>Marca</th><th>Modelo</th><th>Año</th><th>Precio mostrado</th><th>Precio base</th><th>Moneda</th><th>Pujas</th><th>Cierre publicado</th><th>Ubicación</th><th>Superbid</th>
 </tr></thead><tbody id="superbidBody"><tr data-search="5025109 rack para bicileta( 1 aprox. desechado por siniestro)  codigo: ri-01-26  ubicación: almacen superbid - lima (lurin-arica)  abierto a pujas ">
