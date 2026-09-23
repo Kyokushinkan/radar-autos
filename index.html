@@ -19,7 +19,7 @@ tr:hover{background:#f8fafc} .badge{display:inline-block;font-size:10px;font-wei
 .hero h1{font-size:30px;margin:0 0 6px}
 .hero .lead{color:#cbd5e1;margin:0}
 .updated{background:#1f2937;border:1px solid #374151;border-radius:10px;padding:9px 12px;font-size:13px;color:#e5e7eb}
-.kpis{display:grid;grid-template-columns:repeat(4,minmax(145px,1fr));gap:10px;margin-top:20px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin-top:20px}
 .kpi{background:#1f2937;border:1px solid #374151;border-radius:12px;padding:14px}
 .kpi b{display:block;font-size:26px;margin-bottom:4px}
 .kpi span{font-size:12px;color:#cbd5e1;text-transform:uppercase;letter-spacing:.04em}
@@ -29,23 +29,25 @@ tr:hover{background:#f8fafc} .badge{display:inline-block;font-size:10px;font-wei
 <div class="hero-top">
 <div>
 <h1>&#128663; Radar Autos</h1>
-<div class="lead">Inteligencia de oportunidades &middot; NeoAuto + VMC</div>
+<div class="lead">Inteligencia de oportunidades &middot; NeoAuto + VMC + Superbid</div>
 </div>
-<div class="updated">Actualizado: <b>22/09/2026 · 15:14</b></div>
+<div class="updated">Actualizado: <b>22/09/2026 · 18:02</b></div>
 </div>
 
 <div class="kpis">
-<div class="kpi"><b>224</b><span>Universo analizado</span></div>
-<div class="kpi"><b>126</b><span>Valorados V2</span></div>
+<div class="kpi"><b>225</b><span>Universo analizado</span></div>
+<div class="kpi"><b>130</b><span>Valorados V2</span></div>
 <div class="kpi"><b>47</b><span>Evidence A</span></div>
 <div class="kpi"><b>25</b><span>VMC activos</span></div>
+<div class="kpi"><b>21</b><span>Superbid activos</span></div>
 </div>
 </div>
 <div class="tabs">
-<button id="bn" class="active" onclick="tab('neo')">NeoAuto · Evidencia A</button>
-<button id="bf" onclick="tab('flip')">FLIP · Reventa (32)</button>
-<button id="ba" onclick="tab('active')">VMC · Activos (25)</button>
-<button id="bh" onclick="tab('history')">VMC · Histórico (12)</button></div>
+<button id="bn" data-tab="neo" class="active" onclick="tab('neo')">NeoAuto · Evidencia A</button>
+<button id="bf" data-tab="flip" onclick="tab('flip')">FLIP · Reventa (32)</button>
+<button id="ba" data-tab="active" onclick="tab('active')">VMC · Activos (25)</button>
+<button id="bh" data-tab="history" onclick="tab('history')">VMC · Histórico (15)</button>
+<button id="bs" data-tab="superbid" onclick="tab('superbid')">Superbid · Activos (21)</button></div>
 
 <section id="neo" class="panel active">
 <div class="controls"><input id="qn" placeholder="Buscar vehículo..." oninput="filterRows('neoBody','qn')"></div>
@@ -140,13 +142,9 @@ tr:hover{background:#f8fafc} .badge{display:inline-block;font-size:10px;font-wei
 <td>$24,990</td><td>$25,000</td><td><b>0.0%</b></td>
 <td>48,000</td><td>+0%</td><td>6</td><td>24.10</td><td><a href="https://neoauto.com/auto/seminuevo/mazda-cx-5-2022-1884215" target="_blank">Ver anuncio ↗</a></td></tr><tr data-search="toyota rav4 2024 sin descuento">
 <td><span class="badge muted">SIN DESCUENTO</span></td>
-<td><b>TOYOTA RAV4 2024</b><small>pk 47 · NeoAuto 1875900</small></td>
+<td><b>TOYOTA RAV4 2024</b><small>pk 44 · NeoAuto 1886570</small></td>
 <td>$36,000</td><td>$36,000</td><td><b>0.0%</b></td>
-<td>49,541</td><td>+11%</td><td>5</td><td>22.50</td><td><a href="https://neoauto.com/auto/seminuevo/toyota-rav4-2024-1875900" target="_blank">Ver anuncio ↗</a></td></tr><tr data-search="toyota rav4 2025 sin descuento">
-<td><span class="badge muted">SIN DESCUENTO</span></td>
-<td><b>TOYOTA RAV4 2025</b><small>pk 49 · NeoAuto 1885649</small></td>
-<td>$40,500</td><td>$40,500</td><td><b>0.0%</b></td>
-<td>77,217</td><td>+117%</td><td>3</td><td>13.50</td><td><a href="https://neoauto.com/auto/seminuevo/toyota-rav4-2025-1885649" target="_blank">Ver anuncio ↗</a></td></tr><tr data-search="toyota rav4 2025 sin descuento">
+<td>18,474</td><td>-59%</td><td>5</td><td>22.50</td><td><a href="https://neoauto.com/auto/seminuevo/toyota-rav4-2024-1886570" target="_blank">Ver anuncio ↗</a></td></tr><tr data-search="toyota rav4 2025 sin descuento">
 <td><span class="badge muted">SIN DESCUENTO</span></td>
 <td><b>TOYOTA RAV4 2025</b><small>pk 55 · NeoAuto 1880960</small></td>
 <td>$40,500</td><td>$40,500</td><td><b>0.0%</b></td>
@@ -154,11 +152,15 @@ tr:hover{background:#f8fafc} .badge{display:inline-block;font-size:10px;font-wei
 <td><span class="badge muted">SIN DESCUENTO</span></td>
 <td><b>TOYOTA RAV4 2025</b><small>pk 51 · NeoAuto 1885971</small></td>
 <td>$40,500</td><td>$40,500</td><td><b>0.0%</b></td>
-<td>39,864</td><td>+12%</td><td>3</td><td>13.50</td><td><a href="https://neoauto.com/auto/seminuevo/toyota-rav4-2025-1885971" target="_blank">Ver anuncio ↗</a></td></tr><tr data-search="toyota rav4 2024 sin descuento">
+<td>39,864</td><td>+12%</td><td>3</td><td>13.50</td><td><a href="https://neoauto.com/auto/seminuevo/toyota-rav4-2025-1885971" target="_blank">Ver anuncio ↗</a></td></tr><tr data-search="toyota rav4 2025 sin descuento">
 <td><span class="badge muted">SIN DESCUENTO</span></td>
-<td><b>TOYOTA RAV4 2024</b><small>pk 44 · NeoAuto 1886570</small></td>
+<td><b>TOYOTA RAV4 2025</b><small>pk 49 · NeoAuto 1885649</small></td>
+<td>$40,500</td><td>$40,500</td><td><b>0.0%</b></td>
+<td>77,217</td><td>+117%</td><td>3</td><td>13.50</td><td><a href="https://neoauto.com/auto/seminuevo/toyota-rav4-2025-1885649" target="_blank">Ver anuncio ↗</a></td></tr><tr data-search="toyota rav4 2024 sin descuento">
+<td><span class="badge muted">SIN DESCUENTO</span></td>
+<td><b>TOYOTA RAV4 2024</b><small>pk 47 · NeoAuto 1875900</small></td>
 <td>$36,000</td><td>$36,000</td><td><b>0.0%</b></td>
-<td>18,474</td><td>-59%</td><td>5</td><td>22.50</td><td><a href="https://neoauto.com/auto/seminuevo/toyota-rav4-2024-1886570" target="_blank">Ver anuncio ↗</a></td></tr><tr data-search="toyota corolla cross 2026 sin descuento">
+<td>49,541</td><td>+11%</td><td>5</td><td>22.50</td><td><a href="https://neoauto.com/auto/seminuevo/toyota-rav4-2024-1875900" target="_blank">Ver anuncio ↗</a></td></tr><tr data-search="toyota corolla cross 2026 sin descuento">
 <td><span class="badge muted">SIN DESCUENTO</span></td>
 <td><b>TOYOTA COROLLA CROSS 2026</b><small>pk 303 · NeoAuto 1886637</small></td>
 <td>$31,900</td><td>$31,800</td><td><b>-0.3%</b></td>
@@ -176,13 +178,13 @@ tr:hover{background:#f8fafc} .badge{display:inline-block;font-size:10px;font-wei
 <td>$26,900</td><td>$26,500</td><td><b>-1.5%</b></td>
 <td>20,000</td><td>-23%</td><td>3</td><td>13.50</td><td><a href="https://neoauto.com/auto/seminuevo/kia-sportage-2024-1879544" target="_blank">Ver anuncio ↗</a></td></tr><tr data-search="toyota corolla cross 2024 sin descuento">
 <td><span class="badge muted">SIN DESCUENTO</span></td>
-<td><b>TOYOTA COROLLA CROSS 2024</b><small>pk 304 · NeoAuto 1880632</small></td>
-<td>$24,500</td><td>$24,000</td><td><b>-2.1%</b></td>
-<td>57,784</td><td>+61%</td><td>7</td><td>25.50</td><td><a href="https://neoauto.com/auto/seminuevo/toyota-corolla-cross-2024-1880632" target="_blank">Ver anuncio ↗</a></td></tr><tr data-search="toyota corolla cross 2024 sin descuento">
-<td><span class="badge muted">SIN DESCUENTO</span></td>
 <td><b>TOYOTA COROLLA CROSS 2024</b><small>pk 361 · NeoAuto 1887020</small></td>
 <td>$24,500</td><td>$24,000</td><td><b>-2.1%</b></td>
-<td>35,900</td><td>-9%</td><td>7</td><td>25.50</td><td><a href="https://neoauto.com/auto/seminuevo/toyota-corolla-cross-2024-1887020" target="_blank">Ver anuncio ↗</a></td></tr><tr data-search="toyota corolla cross 2026 sin descuento">
+<td>35,900</td><td>-9%</td><td>7</td><td>25.50</td><td><a href="https://neoauto.com/auto/seminuevo/toyota-corolla-cross-2024-1887020" target="_blank">Ver anuncio ↗</a></td></tr><tr data-search="toyota corolla cross 2024 sin descuento">
+<td><span class="badge muted">SIN DESCUENTO</span></td>
+<td><b>TOYOTA COROLLA CROSS 2024</b><small>pk 304 · NeoAuto 1880632</small></td>
+<td>$24,500</td><td>$24,000</td><td><b>-2.1%</b></td>
+<td>57,784</td><td>+61%</td><td>7</td><td>25.50</td><td><a href="https://neoauto.com/auto/seminuevo/toyota-corolla-cross-2024-1880632" target="_blank">Ver anuncio ↗</a></td></tr><tr data-search="toyota corolla cross 2026 sin descuento">
 <td><span class="badge muted">SIN DESCUENTO</span></td>
 <td><b>TOYOTA COROLLA CROSS 2026</b><small>pk 290 · NeoAuto 1882557</small></td>
 <td>$28,900</td><td>$27,800</td><td><b>-4.0%</b></td>
@@ -1081,17 +1083,176 @@ publicado ya excede el nivel económico objetivo antes de incorporar costos real
 <td>N/D</td>
 <td><a href="https://www.vmcsubastas.com/oferta/63412" target="_blank">Ver lote ↗</a></td>
 <td><a href="https://cdn.vmcsubastas.com/details/63412_2026_09_18_182858_941639915083727019.pdf" target="_blank">Detalle</a> · <a href="https://cdn.vmcsubastas.com/images/ficha_tecnica/oferta_63412.pdf" target="_blank">Resumen</a> · <a href="https://cdn.vmcsubastas.com/images/ficha_sunarp/6aadb98670a55.pdf" target="_blank">SUNARP</a></td></tr></tbody></table></div>
-<div class="note"><b>Mercado NeoAuto aquí es solo contexto modelo/año ±1, no Mercado A.</b> La brecha compara precio base VMC con ese contexto. &ldquo;Entrada conocida&rdquo; incluye únicamente base + comisión explícita. No incluye transferencia, transporte, reparaciones, impuestos, levantamientos u otros costos no cuantificados. El importe facial de un embargo no se suma automáticamente como costo de adquisición.</div>
+<div class="note"><b>Mercado NeoAuto aquí es solo contexto modelo/año ±1, no Mercado A.</b> La brecha compara precio base VMC con ese contexto. &ldquo;Entrada conocida&rdquo; incluye únicamente base + comisión explícita. No incluye transferencia, transporte, reparaciones, impuestos, levantamientos u otros costos no cuantificados. El importe facial de un embargo no se suma automáticamente como costo de adquisición.</div>
+</section>
+
+<section id="superbid" class="panel">
+<div class="cards"><div class="card"><b>21</b>lotes activos según estado explícito de la fuente</div></div>
+<div class="controls"><input id="qs" placeholder="Buscar lote, vehículo, estado o ubicación..." oninput="filterRows('superbidBody','qs')"></div>
+<div class="note"><b>Fuente informativa.</b> El precio mostrado es precio/base de subasta y no constituye costo total ni valorización de mercado. Superbid todavía no participa en scoring ni comparables de Radar Autos. currentMinBid/currentMaxBid no se interpretan como pujas reales, la ausencia de un lote no se interpreta como venta y la ausencia de información legal no significa que el vehículo esté limpio.</div>
+<div class="tablewrap"><table><thead><tr>
+<th>Estado fuente</th><th>Título / lote</th><th>Marca</th><th>Modelo</th><th>Año</th><th>Precio mostrado</th><th>Precio base</th><th>Moneda</th><th>Pujas</th><th>Cierre publicado</th><th>Ubicación</th><th>Superbid</th>
+</tr></thead><tbody id="superbidBody"><tr data-search="5025109 rack para bicileta( 1 aprox. desechado por siniestro)  codigo: ri-01-26  ubicación: almacen superbid - lima (lurin-arica)  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>RACK PARA BICILETA( 1 APROX. DESECHADO POR SINIESTRO)  CODIGO: RI-01-26  UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA)</b><small>Superbid 5025109</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 20<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 20</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-23 14:01:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/rack-para-bicileta-1-aprox-desechado-por-siniestro-codigo-ri-01-26-ubicacion-almacen-superbid-lima-lurin-arica-5025109" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5012849 suv - marca: ford - modelo: ecosport freestyle - año: 2016 - placa: *****8 - ubicación: lima - perú - importante: ver boleta informativa sunarp en anexos ford ecosport 2016 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SUV - MARCA: FORD - MODELO: ECOSPORT FREESTYLE - AÑO: 2016 - PLACA: *****8 - UBICACIÓN: LIMA - PERÚ - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5012849</small></td>
+<td>FORD</td><td>ECOSPORT</td><td>2016</td>
+<td>USD 6,300<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 6,300</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-23 15:00:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-ford-modelo-ecosport-freestyle-ano-2016-placa-8-ubicacion-lima-peru-importante-ver-boleta-informativa-sunarp-en-anexos-5012849" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5012848 hatchback - marca: audi - modelo: a1 pi 1.4 tfsi stronic año: 2017 placa: *****0 - ubicación: lima - distrito san isidro - importante: ver boleta informativa sunarp en anexos audi a1 2017 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>HATCHBACK - MARCA: AUDI - MODELO: A1 PI 1.4 TFSI STRONIC AÑO: 2017 PLACA: *****0 - UBICACIÓN: LIMA - DISTRITO SAN ISIDRO - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5012848</small></td>
+<td>AUDI</td><td>A1</td><td>2017</td>
+<td>USD 10,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 10,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-23 15:01:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/hatchback-marca-audi-modelo-a1-pi-14-tfsi-stronic-ano-2017-placa-0-ubicacion-lima-distrito-san-isidro-importante-ver-boleta-informativa-sunarp-en-anexos-5012848" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5015520 suv - marca: ssangyong - modelo: actyon mec 2.3g 4x2 2.3g - placa: ******5 - año: 2012 - ubicación: lima  - importante: ver boleta informativa en anexos ssangyong actyon mec 2.3g 4x2 2.3g 2012 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SUV - MARCA: SSANGYONG - MODELO: ACTYON MEC 2.3G 4X2 2.3G - PLACA: ******5 - AÑO: 2012 - UBICACIÓN: LIMA  - IMPORTANTE: VER BOLETA INFORMATIVA EN ANEXOS</b><small>Superbid 5015520</small></td>
+<td>SSANGYONG</td><td>ACTYON MEC 2.3G 4X2 2.3G</td><td>2012</td>
+<td>USD 3,500<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 3,500</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-23 15:01:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-ssangyong-modelo-actyon-mec-23g-4x2-23g-placa-5-ano-2012-ubicacion-lima-importante-ver-boleta-informativa-en-anexos-5015520" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5015528 suv - marca: dfsk   modelo: glory 370 cvt año: 2019 placa: *****9  - ubicación: almacen superbid - lima (lurin-arica) - importante: ver boleta informativa sunarp en anexos dfsk glory glory 370 cvt 2019 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SUV - MARCA: DFSK   MODELO: GLORY 370 CVT AÑO: 2019 PLACA: *****9  - UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA) - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5015528</small></td>
+<td>DFSK</td><td>GLORY GLORY 370 CVT</td><td>2019</td>
+<td>USD 4,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 4,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-23 15:02:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-dfsk-modelo-glory-370-cvt-ano-2019-placa-9-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5015528" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5015530 sedan - marca: volkswagen modelo: gol sedan concept 1.6 mec  año: 2021  placa: *****1  - ubicación: almacen superbid - lima (lurin-arica)  - importante: ver boleta informativa sunarp en anexos volkswagen gol sedan concept 1.6 mec 2021 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SEDAN - MARCA: VOLKSWAGEN MODELO: GOL SEDAN CONCEPT 1.6 MEC  AÑO: 2021  PLACA: *****1  - UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA)  - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5015530</small></td>
+<td>VOLKSWAGEN</td><td>GOL SEDAN CONCEPT 1.6 MEC</td><td>2021</td>
+<td>USD 5,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 5,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-23 15:02:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/sedan-marca-volkswagen-modelo-gol-sedan-concept-16-mec-ano-2021-placa-1-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5015530" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5015529 motocicleta - marca: bajaj  modelo: pulsar 200 ns fi abs peru año: 2023 placa: *****c  - ubicación: almacen superbid - lima (lurin-arica) - importante: ver boleta informativa sunarp en anexos bajaj pulsar 200 ns fi abs peru l 2023 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>MOTOCICLETA - MARCA: BAJAJ  MODELO: PULSAR 200 NS FI ABS PERU AÑO: 2023 PLACA: *****C  - UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA) - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5015529</small></td>
+<td>BAJAJ</td><td>PULSAR 200 NS FI ABS PERU L</td><td>2023</td>
+<td>USD 800<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 800</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-23 15:03:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/motocicleta-marca-bajaj-modelo-pulsar-200-ns-fi-abs-peru-ano-2023-placa-c-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5015529" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5015527 sedan - marca: toyota  modelo: yaris gli 1.3 m/t año: 2019 placa: *****3  - ubicación: almacen superbid - lima (lurin-arica)  - importante: ver boleta informativa sunarp en anexos toyota yaris yaris gli 1.3 m/t 2019 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SEDAN - MARCA: TOYOTA  MODELO: YARIS GLI 1.3 M/T AÑO: 2019 PLACA: *****3  - UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA)  - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5015527</small></td>
+<td>TOYOTA</td><td>YARIS YARIS GLI 1.3 M/T</td><td>2019</td>
+<td>USD 6,500<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 6,500</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-23 15:03:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/sedan-marca-toyota-modelo-yaris-gli-13-m-t-ano-2019-placa-3-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5015527" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5021912 suv - marca:  nissan modelo: qashqai tekna 4x2 2.0 año: 2013 placa: *****6 - ubicación: almacen superbid - lima (lurin-arica) - importante: ver boleta informativa sunarp en anexos nissan qashqai tekna 4x2 2.0 2013 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SUV - MARCA:  NISSAN MODELO: QASHQAI TEKNA 4X2 2.0 AÑO: 2013 PLACA: *****6 - UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA) - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5021912</small></td>
+<td>NISSAN</td><td>QASHQAI TEKNA 4X2 2.0</td><td>2013</td>
+<td>USD 5,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 5,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-23 15:04:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-nissan-modelo-qashqai-tekna-4x2-20-ano-2013-placa-6-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5021912" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5022952 suv - marca: dongfeng  modelo: sx5 lz6452xq16am  año: 2022 placa: *****2  - ubicación: cochera particular -lima - importante: ver boleta informativa sunarp en anexos dongfeng sx5 lz6452xq16am 2022 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SUV - MARCA: DONGFENG  MODELO: SX5 LZ6452XQ16AM  AÑO: 2022 PLACA: *****2  - UBICACIÓN: COCHERA PARTICULAR -LIMA - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5022952</small></td>
+<td>DONGFENG</td><td>SX5 LZ6452XQ16AM</td><td>2022</td>
+<td>USD 8,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 8,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-23 15:05:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-dongfeng-modelo-sx5-lz6452xq16am-ano-2022-placa-2-ubicacion-cochera-particular-lima-importante-ver-boleta-informativa-sunarp-en-anexos-5022952" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5023236 sedan - marca: kia - modelo: cerato 1.6 at sx - año: 2012 - placa: *****9 - ubicación: lima - perú - importante: ver boleta informativa sunarp en anexos kia cerato 1.6 at sx 2012 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SEDAN - MARCA: KIA - MODELO: CERATO 1.6 AT SX - AÑO: 2012 - PLACA: *****9 - UBICACIÓN: LIMA - PERÚ - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5023236</small></td>
+<td>KIA</td><td>CERATO 1.6 AT SX</td><td>2012</td>
+<td>USD 5,800<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 5,800</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-23 15:05:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/sedan-marca-kia-modelo-cerato-16-at-sx-ano-2012-placa-9-ubicacion-lima-peru-importante-ver-boleta-informativa-sunarp-en-anexos-5023236" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5023789 hatchback - marca: mazda modelo: mazda3 mazda 3 sport high 2.5  año: 2025 placa: *****8 - ubicación: almacen superbid - lima (lurin-arica) - importante: ver boleta informativa sunarp en anexos mazda mazda3 mazda 3 sport high 2.5 2025 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>HATCHBACK - MARCA: MAZDA MODELO: MAZDA3 MAZDA 3 SPORT HIGH 2.5  AÑO: 2025 PLACA: *****8 - UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA) - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5023789</small></td>
+<td>MAZDA</td><td>MAZDA3 MAZDA 3 SPORT HIGH 2.5</td><td>2025</td>
+<td>USD 17,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 17,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-23 15:06:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/hatchback-marca-mazda-modelo-mazda3-mazda-3-sport-high-25-ano-2025-placa-8-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5023789" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5024716 suv - marca: audi  modelo: q3 attraction 35 tfsi s año: 2024 siniestro: 11053911-placa: *****2-ubicación: almacen superbid - lima (lurin-arica) - importante: ver boleta informativa sunarp en anexos audi q3 attraction 35 tfsi s 2024 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SUV - MARCA: AUDI  MODELO: Q3 ATTRACTION 35 TFSI S AÑO: 2024 SINIESTRO: 11053911-PLACA: *****2-UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA) - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5024716</small></td>
+<td>AUDI</td><td>Q3 ATTRACTION 35 TFSI S</td><td>2024</td>
+<td>USD 8,500<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 8,500</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-24 12:00:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-audi-modelo-q3-attraction-35-tfsi-s-ano-2024-siniestro-11053911-placa-2-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5024716" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5022866 sedan - marca: toyota  modelo: yaris gli 1.3 mt año: 2014 siniestro: 251014529-placa: *****6-ubicación: almacen superbid - lima (lurin-arica) - importante: ver boleta informativa sunarp en anexos toyota yaris gli 1.3 mt 2014 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SEDAN - MARCA: TOYOTA  MODELO: YARIS GLI 1.3 MT AÑO: 2014 SINIESTRO: 251014529-PLACA: *****6-UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA) - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5022866</small></td>
+<td>TOYOTA</td><td>YARIS GLI 1.3 MT</td><td>2014</td>
+<td>USD 3,500<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 3,500</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-24 12:00:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/sedan-marca-toyota-modelo-yaris-gli-13-mt-ano-2014-siniestro-251014529-placa-6-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5022866" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5022867 sedan - marca: chery  modelo: arrizo 1.5 mt año: 2022 siniestro: 61050170-placa: *****9-ubicación: almacen superbid - lima (lurin-arica) - importante: ver boleta informativa sunarp en anexos chery arrizo 1.5 mt 2022 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SEDAN - MARCA: CHERY  MODELO: ARRIZO 1.5 MT AÑO: 2022 SINIESTRO: 61050170-PLACA: *****9-UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA) - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5022867</small></td>
+<td>CHERY</td><td>ARRIZO 1.5 MT</td><td>2022</td>
+<td>USD 2,500<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 2,500</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-24 12:01:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/sedan-marca-chery-modelo-arrizo-15-mt-ano-2022-siniestro-61050170-placa-9-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5022867" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5024715 hatchback - marca: chevrolet  modelo: onix 1.0t rs mt año: 2024 siniestro: 231132025-placa: *****6-ubicación: almacen superbid - lima (lurin-arica) - importante: ver boleta informativa sunarp en anexos chevrolet onix 1.0t rs mt 2024 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>HATCHBACK - MARCA: CHEVROLET  MODELO: ONIX 1.0T RS MT AÑO: 2024 SINIESTRO: 231132025-PLACA: *****6-UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA) - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5024715</small></td>
+<td>CHEVROLET</td><td>ONIX 1.0T RS MT</td><td>2024</td>
+<td>USD 4,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 4,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-24 12:01:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/hatchback-marca-chevrolet-modelo-onix-10t-rs-mt-ano-2024-siniestro-231132025-placa-6-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5024715" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5024717 suv - marca: dfsk  modelo: glory 560 pro 1.8l mt año: 2026 siniestro: 11056270-placa: *****9-ubicación: almacen superbid - lima (lurin-arica) - importante: ver boleta informativa sunarp en anexos dfsk glory 560 pro 1.8l mt 2026 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SUV - MARCA: DFSK  MODELO: GLORY 560 PRO 1.8L MT AÑO: 2026 SINIESTRO: 11056270-PLACA: *****9-UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA) - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5024717</small></td>
+<td>DFSK</td><td>GLORY 560 PRO 1.8L MT</td><td>2026</td>
+<td>USD 3,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 3,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-24 12:02:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-dfsk-modelo-glory-560-pro-18l-mt-ano-2026-siniestro-11056270-placa-9-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5024717" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5025687 hatchback - marca: chevrolet  modelo: onix 1.0t rs mt año: 2022 - placa: *****4-ubicación: cajamarquilla - importante: ver boleta informativa sunarp en anexos chevrolet onix 1.0t rs mt 2022 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>HATCHBACK - MARCA: CHEVROLET  MODELO: ONIX 1.0T RS MT AÑO: 2022 - PLACA: *****4-UBICACIÓN: CAJAMARQUILLA - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5025687</small></td>
+<td>CHEVROLET</td><td>ONIX 1.0T RS MT</td><td>2022</td>
+<td>USD 4,200<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 4,200</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:00:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/hatchback-marca-chevrolet-modelo-onix-10t-rs-mt-ano-2022-placa-4-ubicacion-cajamarquilla-importante-ver-boleta-informativa-sunarp-en-anexos-5025687" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5025686 remolcador - marca: freightliner  modelo: cl 112 mexico año: 2017 - placa: *****5-ubicación: cajamarquilla - importante: ver boleta informativa sunarp en anexos freightliner cl 112 mexico 2017 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>REMOLCADOR - MARCA: FREIGHTLINER  MODELO: CL 112 MEXICO AÑO: 2017 - PLACA: *****5-UBICACIÓN: CAJAMARQUILLA - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5025686</small></td>
+<td>FREIGHTLINER</td><td>CL 112 MEXICO</td><td>2017</td>
+<td>USD 9,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 9,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:00:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/remolcador-marca-freightliner-modelo-cl-112-mexico-ano-2017-placa-5-ubicacion-cajamarquilla-importante-ver-boleta-informativa-sunarp-en-anexos-5025686" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5028873 suv - marca: jac  modelo: js2 js2 1.5 cvt luxury año: 2026 - placa: *****9-ubicación: cajamarquilla - importante: ver boleta informativa sunarp en anexos jac js2 js2 1.5 cvt luxury 2026 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SUV - MARCA: JAC  MODELO: JS2 JS2 1.5 CVT LUXURY AÑO: 2026 - PLACA: *****9-UBICACIÓN: CAJAMARQUILLA - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5028873</small></td>
+<td>JAC</td><td>JS2 JS2 1.5 CVT LUXURY</td><td>2026</td>
+<td>USD 3,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 3,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:01:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-jac-modelo-js2-js2-15-cvt-luxury-ano-2026-placa-9-ubicacion-cajamarquilla-importante-ver-boleta-informativa-sunarp-en-anexos-5028873" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5029680 baranda - marca: jac  modelo:  hfc1040kn d400 121 chc 4.0t eiv  año: 2025 placa: *****4  - ubicación: almacen superbid - lima (lurin-arica) - importante: ver boleta informativa sunarp en anexos jac hfc1040kn d400 121 chc 4.0t eiv 2025 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>BARANDA - MARCA: JAC  MODELO:  HFC1040KN D400 121 CHC 4.0T EIV  AÑO: 2025 PLACA: *****4  - UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA) - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5029680</small></td>
+<td>JAC</td><td>HFC1040KN D400 121 CHC 4.0T EIV</td><td>2025</td>
+<td>USD 15,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 15,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-28 15:00:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/baranda-marca-jac-modelo-hfc1040kn-d400-121-chc-40t-eiv-ano-2025-placa-4-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5029680" target="_blank">Ver lote ↗</a></td></tr></tbody></table></div>
 </section>
 
 <section id="history" class="panel">
-<div class="cards"><div class="card"><b>12</b>no disponibles / históricos</div></div>
+<div class="cards"><div class="card"><b>15</b>no disponibles / históricos</div></div>
 <div class="controls"><input id="qh" placeholder="Buscar histórico..." oninput="filterRows('historyBody','qh')"></div>
 <div class="tablewrap"><table><thead><tr><th>Estado</th><th>Vehículo</th><th>Última base</th><th>HTTP</th><th>Referencia</th></tr></thead>
 <tbody id="historyBody"><tr data-search="toyota hilux 2025 63398  maf perú">
 <td><span class="badge bad">OFFER_UNAVAILABLE</span></td>
 <td><b>Toyota Hilux 2025</b><small>Oferta 63398</small></td>
-<td>$19,999</td><td>404</td><td><a href="https://www.vmcsubastas.com/oferta/63398" target="_blank">Ver lote ↗</a></td></tr><tr data-search="toyota yaris cross 2026 63438  autoplan">
+<td>$19,999</td><td>404</td><td><a href="https://www.vmcsubastas.com/oferta/63398" target="_blank">Ver lote ↗</a></td></tr><tr data-search="toyota yaris cross 2026 63451  autoplan">
+<td><span class="badge bad">SIN_DETALLE</span></td>
+<td><b>Toyota Yaris Cross 2026</b><small>Oferta 63451</small></td>
+<td>$13,999</td><td>N/D</td><td><a href="https://www.vmcsubastas.com/oferta/63451" target="_blank">Ver lote ↗</a></td></tr><tr data-search="toyota yaris cross 2026 63438  autoplan">
 <td><span class="badge bad">OFFER_UNAVAILABLE</span></td>
 <td><b>Toyota Yaris Cross 2026</b><small>Oferta 63438</small></td>
 <td>$13,999</td><td>404</td><td><a href="https://www.vmcsubastas.com/oferta/63438" target="_blank">Ver lote ↗</a></td></tr><tr data-search="toyota yaris cross 2026 63411  autoplan">
@@ -1109,7 +1270,10 @@ publicado ya excede el nivel económico objetivo antes de incorporar costos real
 <td>$7,699</td><td>404</td><td><a href="https://www.vmcsubastas.com/oferta/63436" target="_blank">Ver lote ↗</a></td></tr><tr data-search="changan new supervan 2024 63397  autoplan">
 <td><span class="badge bad">OFFER_UNAVAILABLE</span></td>
 <td><b>Changan New Supervan 2024</b><small>Oferta 63397</small></td>
-<td>$7,699</td><td>404</td><td><a href="https://www.vmcsubastas.com/oferta/63397" target="_blank">Ver lote ↗</a></td></tr><tr data-search="kyc new v7 2025 63437  autoplan">
+<td>$7,699</td><td>404</td><td><a href="https://www.vmcsubastas.com/oferta/63397" target="_blank">Ver lote ↗</a></td></tr><tr data-search="kyc new v7 2025 63450  autoplan">
+<td><span class="badge bad">SIN_DETALLE</span></td>
+<td><b>KYC New V7 2025</b><small>Oferta 63450</small></td>
+<td>$7,399</td><td>N/D</td><td><a href="https://www.vmcsubastas.com/oferta/63450" target="_blank">Ver lote ↗</a></td></tr><tr data-search="kyc new v7 2025 63437  autoplan">
 <td><span class="badge bad">OFFER_UNAVAILABLE</span></td>
 <td><b>KYC New V7 2025</b><small>Oferta 63437</small></td>
 <td>$7,399</td><td>404</td><td><a href="https://www.vmcsubastas.com/oferta/63437" target="_blank">Ver lote ↗</a></td></tr><tr data-search="kyc new v7 2025 63410  autoplan">
@@ -1118,7 +1282,10 @@ publicado ya excede el nivel económico objetivo antes de incorporar costos real
 <td>$7,399</td><td>200</td><td><a href="https://www.vmcsubastas.com/oferta/63410" target="_blank">Ver lote ↗</a></td></tr><tr data-search="jac js2 2023 63414  pandero seminuevos">
 <td><span class="badge bad">OFFER_UNAVAILABLE</span></td>
 <td><b>Jac JS2 2023</b><small>Oferta 63414</small></td>
-<td>$6,999</td><td>404</td><td><a href="https://www.vmcsubastas.com/oferta/63414" target="_blank">Ver lote ↗</a></td></tr><tr data-search="changan alsvin 2025 63435  autoplan">
+<td>$6,999</td><td>404</td><td><a href="https://www.vmcsubastas.com/oferta/63414" target="_blank">Ver lote ↗</a></td></tr><tr data-search="changan alsvin 2025 63449  autoplan">
+<td><span class="badge bad">SIN_DETALLE</span></td>
+<td><b>Changan Alsvin 2025</b><small>Oferta 63449</small></td>
+<td>$6,699</td><td>N/D</td><td><a href="https://www.vmcsubastas.com/oferta/63449" target="_blank">Ver lote ↗</a></td></tr><tr data-search="changan alsvin 2025 63435  autoplan">
 <td><span class="badge bad">OFFER_UNAVAILABLE</span></td>
 <td><b>Changan Alsvin 2025</b><small>Oferta 63435</small></td>
 <td>$6,699</td><td>404</td><td><a href="https://www.vmcsubastas.com/oferta/63435" target="_blank">Ver lote ↗</a></td></tr><tr data-search="changan alsvin 2025 63396  autoplan">
@@ -1129,6 +1296,6 @@ publicado ya excede el nivel económico objetivo antes de incorporar costos real
 </section>
 </div>
 <script>
-function tab(x){document.querySelectorAll('.panel').forEach(e=>e.classList.remove('active'));document.querySelectorAll('.tabs button').forEach(e=>e.classList.remove('active'));document.getElementById(x).classList.add('active');document.getElementById(x==='neo'?'bn':x==='flip'?'bf':x==='active'?'ba':'bh').classList.add('active')}
+function tab(x){const panel=document.getElementById(x);const button=document.querySelector('.tabs button[data-tab="'+x+'"]');if(!panel||!button)return;document.querySelectorAll('.panel').forEach(e=>e.classList.remove('active'));document.querySelectorAll('.tabs button').forEach(e=>e.classList.remove('active'));panel.classList.add('active');button.classList.add('active')}
 function filterRows(body,input){let q=document.getElementById(input).value.toLowerCase();document.querySelectorAll('#'+body+' tr').forEach(r=>r.style.display=r.dataset.search.includes(q)?'':'none')}
 </script></body></html>
