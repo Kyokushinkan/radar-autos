@@ -40,7 +40,7 @@ tr:hover{background:#f8fafc} .badge{display:inline-block;font-size:10px;font-wei
 <div class="kpi"><b>48</b><span>Evidence A</span></div>
 <div class="kpi"><b>9</b><span>VMC activos</span></div>
 <div class="kpi"><b>26</b><span>Superbid · captura manual</span></div>
-<div class="kpi"><b>1</b><span>Evidence S · cerradas</span></div>
+<div class="kpi"><b>2</b><span>Evidence S · cerradas</span></div>
 </div>
 </div>
 <div class="tabs">
@@ -49,7 +49,7 @@ tr:hover{background:#f8fafc} .badge{display:inline-block;font-size:10px;font-wei
 <button id="ba" data-tab="active" onclick="tab('active')">VMC · Activos (9)</button>
 <button id="bh" data-tab="history" onclick="tab('history')">VMC · Histórico (43)</button>
 <button id="bs" data-tab="superbid" onclick="tab('superbid')">Superbid · Manual (26)</button>
-<button id="bsc" data-tab="superbid-closed" onclick="tab('superbid-closed')">Superbid · Cerradas (1)</button></div>
+<button id="bsc" data-tab="superbid-closed" onclick="tab('superbid-closed')">Superbid · Cerradas (2)</button></div>
 
 <section id="neo" class="panel active">
 <div class="controls"><input id="qn" placeholder="Buscar vehículo..." oninput="filterRows('neoBody','qn')"></div>
@@ -747,12 +747,19 @@ publicado ya excede el nivel económico objetivo antes de incorporar costos real
 </section>
 
 <section id="superbid-closed" class="panel">
-<div class="cards"><div class="card"><b>1</b>subastas cerradas con Evidence S</div></div>
+<div class="cards"><div class="card"><b>2</b>subastas cerradas con Evidence S</div></div>
 <div class="controls"><input id="qsc" placeholder="Buscar vehículo, offer_id, auction_id o estado..." oninput="filterRows('superbidClosedBody','qsc')"></div>
 <div class="note"><b>Evidence S · comportamiento real de subasta.</b> Fuente manual DevTools. La puja de cierre procede de <code>lanceGanhador.valor</code> con evidencia explícita de ganador, pero no equivale a precio de venta ni adjudicación. Esta evidencia permanece separada de Evidence A/B/C, V2, comparables y FLIP.</div>
 <div class="tablewrap"><table><thead><tr>
 <th>Vehículo / offer_id</th><th>Año</th><th>auction_id</th><th>Precio inicial</th><th>Puja de cierre</th><th>Variación</th><th>Pujas</th><th>Estado cierre</th><th>Adjudicación</th><th>Fecha cierre</th><th>Superbid</th>
-</tr></thead><tbody id="superbidClosedBody"><tr data-search="5015530 796619 volkswagen gol sedan concept 1.6 mec 2021 condicional unknown">
+</tr></thead><tbody id="superbidClosedBody"><tr data-search="5015527 796619 toyota yaris yaris gli 1.3 m/t 2019 condicional unknown">
+<td><b>TOYOTA YARIS YARIS GLI 1.3 M/T 2019</b><small>Superbid 5015527</small></td>
+<td>2019</td><td>796619</td>
+<td><b> 6,500</b><small>Precio inicial documentado</small></td>
+<td><b> 9,100</b><small>Puja de cierre; no implica venta</small></td>
+<td>+40.0%</td><td>51</td>
+<td>Condicional</td><td>UNKNOWN</td>
+<td>2026-09-23T20:35:51.000Z</td><td><a href="https://www.superbid.com.pe/oferta/sedan-marca-toyota-modelo-yaris-gli-13-m-t-ano-2019-placa-3-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5015527" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5015530 796619 volkswagen gol sedan concept 1.6 mec 2021 condicional unknown">
 <td><b>VOLKSWAGEN GOL SEDAN CONCEPT 1.6 MEC 2021</b><small>Superbid 5015530</small></td>
 <td>2021</td><td>796619</td>
 <td><b> 5,000</b><small>Precio inicial documentado</small></td>
