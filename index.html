@@ -39,7 +39,7 @@ tr:hover{background:#f8fafc} .badge{display:inline-block;font-size:10px;font-wei
 <div class="kpi"><b>135</b><span>Valorados V2</span></div>
 <div class="kpi"><b>48</b><span>Evidence A</span></div>
 <div class="kpi"><b>9</b><span>VMC activos</span></div>
-<div class="kpi"><b>26</b><span>Superbid · captura manual</span></div>
+<div class="kpi"><b>58</b><span>Superbid · captura manual</span></div>
 <div class="kpi"><b>2</b><span>Evidence S · cerradas</span></div>
 </div>
 </div>
@@ -48,7 +48,7 @@ tr:hover{background:#f8fafc} .badge{display:inline-block;font-size:10px;font-wei
 <button id="bf" data-tab="flip" onclick="tab('flip')">FLIP · Reventa (33)</button>
 <button id="ba" data-tab="active" onclick="tab('active')">VMC · Activos (9)</button>
 <button id="bh" data-tab="history" onclick="tab('history')">VMC · Histórico (43)</button>
-<button id="bs" data-tab="superbid" onclick="tab('superbid')">Superbid · Manual (26)</button>
+<button id="bs" data-tab="superbid" onclick="tab('superbid')">Superbid · Manual (58)</button>
 <button id="bsc" data-tab="superbid-closed" onclick="tab('superbid-closed')">Superbid · Cerradas (2)</button></div>
 
 <section id="neo" class="panel active">
@@ -906,194 +906,418 @@ publicado ya excede el nivel económico objetivo antes de incorporar costos real
 </section>
 
 <section id="superbid" class="panel">
-<div class="cards"><div class="card"><b>26</b>lotes activos según última captura manual<small>Última captura: 23/09/2026 12:23 · hora Lima</small></div></div>
+<div class="cards"><div class="card"><b>58</b>lotes activos según última captura manual<small>Última captura: 24/09/2026 22:23 · hora Lima<br>superbid-20260924T222351-0500-87defe0a181a</small></div></div>
 <div class="controls"><input id="qs" placeholder="Buscar lote, vehículo, estado o ubicación..." oninput="filterRows('superbidBody','qs')"></div>
-<div class="note"><b>Fuente informativa · captura manual.</b> Superbid no se actualiza automáticamente con NeoAuto y VMC. Última captura: <b>23/09/2026 12:23</b> (hora Lima). El precio mostrado es precio/base de subasta y no constituye costo total ni valorización de mercado. Superbid todavía no participa en scoring ni comparables de Radar Autos. currentMinBid/currentMaxBid no se interpretan como pujas reales, la ausencia de un lote no se interpreta como venta y la ausencia de información legal no significa que el vehículo esté limpio.</div>
+<div class="note"><b>Fuente informativa · captura manual.</b> Superbid no se actualiza automáticamente con NeoAuto y VMC. Última captura completa importada: <b>24/09/2026 22:23</b> (hora Lima), capture_id <b>superbid-20260924T222351-0500-87defe0a181a</b>. El precio mostrado es precio/base de subasta y no constituye costo total ni valorización de mercado. Superbid todavía no participa en scoring ni comparables de Radar Autos. currentMinBid/currentMaxBid no se interpretan como pujas reales, la ausencia de un lote no se interpreta como venta y la ausencia de información legal no significa que el vehículo esté limpio.</div>
 <div class="tablewrap"><table><thead><tr>
 <th>Estado fuente</th><th>Título / lote</th><th>Marca</th><th>Modelo</th><th>Año</th><th>Precio mostrado</th><th>Precio base</th><th>Moneda</th><th>Pujas</th><th>Cierre publicado</th><th>Ubicación</th><th>Superbid</th>
-</tr></thead><tbody id="superbidBody"><tr data-search="5025109 rack para bicileta( 1 aprox. desechado por siniestro)  codigo: ri-01-26  ubicación: almacen superbid - lima (lurin-arica)  abierto a pujas ">
+</tr></thead><tbody id="superbidBody"><tr data-search="5025686 remolcador - marca: freightliner  modelo: cl 112 mexico aã‘o: 2017 - placa: *****5-ubicaciã“n: cajamarquilla - importante: ver boleta informativa sunarp en anexos freightliner cl 112 mexico aã‘o: 2017 abierto a pujas ">
 <td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>RACK PARA BICILETA( 1 APROX. DESECHADO POR SINIESTRO)  CODIGO: RI-01-26  UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA)</b><small>Superbid 5025109</small></td>
-<td>N/D</td><td>N/D</td><td>N/D</td>
-<td>USD 20<small>Precio mostrado por la fuente</small></td>
-<td><b>USD 20</b><small>Precio base; no es precio final</small></td>
-<td>USD</td><td>0</td><td>2026-09-23 14:01:30</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/rack-para-bicileta-1-aprox-desechado-por-siniestro-codigo-ri-01-26-ubicacion-almacen-superbid-lima-lurin-arica-5025109" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5012848 hatchback - marca: audi - modelo: a1 pi 1.4 tfsi stronic año: 2017 placa: *****0 - ubicación: lima - distrito san isidro - importante: ver boleta informativa sunarp en anexos audi a1 2017 abierto a pujas ">
+<td><b>REMOLCADOR - MARCA: FREIGHTLINER  MODELO: CL 112 MEXICO AÃ‘O: 2017 - PLACA: *****5-UBICACIÃ“N: CAJAMARQUILLA - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5025686</small></td>
+<td>FREIGHTLINER</td><td>CL 112 MEXICO AÃ‘O: 2017</td><td>N/D</td>
+<td>USD 9,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 9,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:00:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/remolcador-marca-freightliner-modelo-cl-112-mexico-aa-o-2017-placa-5-ubicacia-n-cajamarquilla-importante-ver-boleta-informativa-sunarp-en-anexos-5025686" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5025687 hatchback - marca: chevrolet  modelo: onix 1.0t rs mt aã‘o: 2022 - placa: *****4-ubicaciã“n: cajamarquilla - importante: ver boleta informativa sunarp en anexos chevrolet onix 1.0t rs mt aã‘o: 2022 abierto a pujas ">
 <td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>HATCHBACK - MARCA: AUDI - MODELO: A1 PI 1.4 TFSI STRONIC AÑO: 2017 PLACA: *****0 - UBICACIÓN: LIMA - DISTRITO SAN ISIDRO - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5012848</small></td>
-<td>AUDI</td><td>A1</td><td>2017</td>
-<td>USD 15,100<small>Precio mostrado por la fuente</small></td>
-<td><b>USD 15,100</b><small>Precio base; no es precio final</small></td>
-<td>USD</td><td>0</td><td>2026-09-23 15:00:00</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/hatchback-marca-audi-modelo-a1-pi-14-tfsi-stronic-ano-2017-placa-0-ubicacion-lima-distrito-san-isidro-importante-ver-boleta-informativa-sunarp-en-anexos-5012848" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5012849 suv - marca: ford - modelo: ecosport freestyle - año: 2016 - placa: *****8 - ubicación: lima - perú - importante: ver boleta informativa sunarp en anexos ford ecosport 2016 abierto a pujas ">
-<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>SUV - MARCA: FORD - MODELO: ECOSPORT FREESTYLE - AÑO: 2016 - PLACA: *****8 - UBICACIÓN: LIMA - PERÚ - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5012849</small></td>
-<td>FORD</td><td>ECOSPORT</td><td>2016</td>
-<td>USD 6,300<small>Precio mostrado por la fuente</small></td>
-<td><b>USD 6,300</b><small>Precio base; no es precio final</small></td>
-<td>USD</td><td>0</td><td>2026-09-23 15:00:00</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-ford-modelo-ecosport-freestyle-ano-2016-placa-8-ubicacion-lima-peru-importante-ver-boleta-informativa-sunarp-en-anexos-5012849" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5015520 suv - marca: ssangyong - modelo: actyon mec 2.3g 4x2 2.3g - placa: ******5 - año: 2012 - ubicación: lima  - importante: ver boleta informativa en anexos ssangyong actyon mec 2.3g 4x2 2.3g 2012 abierto a pujas ">
-<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>SUV - MARCA: SSANGYONG - MODELO: ACTYON MEC 2.3G 4X2 2.3G - PLACA: ******5 - AÑO: 2012 - UBICACIÓN: LIMA  - IMPORTANTE: VER BOLETA INFORMATIVA EN ANEXOS</b><small>Superbid 5015520</small></td>
-<td>SSANGYONG</td><td>ACTYON MEC 2.3G 4X2 2.3G</td><td>2012</td>
-<td>USD 3,500<small>Precio mostrado por la fuente</small></td>
-<td><b>USD 3,500</b><small>Precio base; no es precio final</small></td>
-<td>USD</td><td>0</td><td>2026-09-23 15:00:00</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-ssangyong-modelo-actyon-mec-23g-4x2-23g-placa-5-ano-2012-ubicacion-lima-importante-ver-boleta-informativa-en-anexos-5015520" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5015527 sedan - marca: toyota  modelo: yaris gli 1.3 m/t año: 2019 placa: *****3  - ubicación: almacen superbid - lima (lurin-arica)  - importante: ver boleta informativa sunarp en anexos toyota yaris yaris gli 1.3 m/t 2019 abierto a pujas ">
-<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>SEDAN - MARCA: TOYOTA  MODELO: YARIS GLI 1.3 M/T AÑO: 2019 PLACA: *****3  - UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA)  - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5015527</small></td>
-<td>TOYOTA</td><td>YARIS YARIS GLI 1.3 M/T</td><td>2019</td>
-<td>USD 6,500<small>Precio mostrado por la fuente</small></td>
-<td><b>USD 6,500</b><small>Precio base; no es precio final</small></td>
-<td>USD</td><td>0</td><td>2026-09-23 15:00:00</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/sedan-marca-toyota-modelo-yaris-gli-13-m-t-ano-2019-placa-3-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5015527" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5015528 suv - marca: dfsk   modelo: glory 370 cvt año: 2019 placa: *****9  - ubicación: almacen superbid - lima (lurin-arica) - importante: ver boleta informativa sunarp en anexos dfsk glory glory 370 cvt 2019 abierto a pujas ">
-<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>SUV - MARCA: DFSK   MODELO: GLORY 370 CVT AÑO: 2019 PLACA: *****9  - UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA) - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5015528</small></td>
-<td>DFSK</td><td>GLORY GLORY 370 CVT</td><td>2019</td>
-<td>USD 4,000<small>Precio mostrado por la fuente</small></td>
-<td><b>USD 4,000</b><small>Precio base; no es precio final</small></td>
-<td>USD</td><td>0</td><td>2026-09-23 15:00:00</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-dfsk-modelo-glory-370-cvt-ano-2019-placa-9-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5015528" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5015529 motocicleta - marca: bajaj  modelo: pulsar 200 ns fi abs peru año: 2023 placa: *****c  - ubicación: almacen superbid - lima (lurin-arica) - importante: ver boleta informativa sunarp en anexos bajaj pulsar 200 ns fi abs peru l 2023 abierto a pujas ">
-<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>MOTOCICLETA - MARCA: BAJAJ  MODELO: PULSAR 200 NS FI ABS PERU AÑO: 2023 PLACA: *****C  - UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA) - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5015529</small></td>
-<td>BAJAJ</td><td>PULSAR 200 NS FI ABS PERU L</td><td>2023</td>
-<td>USD 800<small>Precio mostrado por la fuente</small></td>
-<td><b>USD 800</b><small>Precio base; no es precio final</small></td>
-<td>USD</td><td>0</td><td>2026-09-23 15:00:00</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/motocicleta-marca-bajaj-modelo-pulsar-200-ns-fi-abs-peru-ano-2023-placa-c-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5015529" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5015530 sedan - marca: volkswagen modelo: gol sedan concept 1.6 mec  año: 2021  placa: *****1  - ubicación: almacen superbid - lima (lurin-arica)  - importante: ver boleta informativa sunarp en anexos volkswagen gol sedan concept 1.6 mec 2021 abierto a pujas ">
-<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>SEDAN - MARCA: VOLKSWAGEN MODELO: GOL SEDAN CONCEPT 1.6 MEC  AÑO: 2021  PLACA: *****1  - UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA)  - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5015530</small></td>
-<td>VOLKSWAGEN</td><td>GOL SEDAN CONCEPT 1.6 MEC</td><td>2021</td>
-<td>USD 5,000<small>Precio mostrado por la fuente</small></td>
-<td><b>USD 5,000</b><small>Precio base; no es precio final</small></td>
-<td>USD</td><td>0</td><td>2026-09-23 15:00:00</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/sedan-marca-volkswagen-modelo-gol-sedan-concept-16-mec-ano-2021-placa-1-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5015530" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5021912 suv - marca:  nissan modelo: qashqai tekna 4x2 2.0 año: 2013 placa: *****6 - ubicación: almacen superbid - lima (lurin-arica) - importante: ver boleta informativa sunarp en anexos nissan qashqai tekna 4x2 2.0 2013 abierto a pujas ">
-<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>SUV - MARCA:  NISSAN MODELO: QASHQAI TEKNA 4X2 2.0 AÑO: 2013 PLACA: *****6 - UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA) - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5021912</small></td>
-<td>NISSAN</td><td>QASHQAI TEKNA 4X2 2.0</td><td>2013</td>
-<td>USD 5,000<small>Precio mostrado por la fuente</small></td>
-<td><b>USD 5,000</b><small>Precio base; no es precio final</small></td>
-<td>USD</td><td>0</td><td>2026-09-23 15:00:00</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-nissan-modelo-qashqai-tekna-4x2-20-ano-2013-placa-6-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5021912" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5022952 suv - marca: dongfeng  modelo: sx5 lz6452xq16am  año: 2022 placa: *****2  - ubicación: cochera particular -lima - importante: ver boleta informativa sunarp en anexos dongfeng sx5 lz6452xq16am 2022 abierto a pujas ">
-<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>SUV - MARCA: DONGFENG  MODELO: SX5 LZ6452XQ16AM  AÑO: 2022 PLACA: *****2  - UBICACIÓN: COCHERA PARTICULAR -LIMA - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5022952</small></td>
-<td>DONGFENG</td><td>SX5 LZ6452XQ16AM</td><td>2022</td>
-<td>USD 7,900<small>Precio mostrado por la fuente</small></td>
-<td><b>USD 7,900</b><small>Precio base; no es precio final</small></td>
-<td>USD</td><td>0</td><td>2026-09-23 15:00:30</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-dongfeng-modelo-sx5-lz6452xq16am-ano-2022-placa-2-ubicacion-cochera-particular-lima-importante-ver-boleta-informativa-sunarp-en-anexos-5022952" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5023236 sedan - marca: kia - modelo: cerato 1.6 at sx - año: 2012 - placa: *****9 - ubicación: lima - perú - importante: ver boleta informativa sunarp en anexos kia cerato 1.6 at sx 2012 abierto a pujas ">
-<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>SEDAN - MARCA: KIA - MODELO: CERATO 1.6 AT SX - AÑO: 2012 - PLACA: *****9 - UBICACIÓN: LIMA - PERÚ - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5023236</small></td>
-<td>KIA</td><td>CERATO 1.6 AT SX</td><td>2012</td>
-<td>USD 5,800<small>Precio mostrado por la fuente</small></td>
-<td><b>USD 5,800</b><small>Precio base; no es precio final</small></td>
-<td>USD</td><td>0</td><td>2026-09-23 15:00:30</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/sedan-marca-kia-modelo-cerato-16-at-sx-ano-2012-placa-9-ubicacion-lima-peru-importante-ver-boleta-informativa-sunarp-en-anexos-5023236" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5023789 hatchback - marca: mazda modelo: mazda3 mazda 3 sport high 2.5  año: 2025 placa: *****8 - ubicación: almacen superbid - lima (lurin-arica) - importante: ver boleta informativa sunarp en anexos mazda mazda3 mazda 3 sport high 2.5 2025 abierto a pujas ">
-<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>HATCHBACK - MARCA: MAZDA MODELO: MAZDA3 MAZDA 3 SPORT HIGH 2.5  AÑO: 2025 PLACA: *****8 - UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA) - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5023789</small></td>
-<td>MAZDA</td><td>MAZDA3 MAZDA 3 SPORT HIGH 2.5</td><td>2025</td>
-<td>USD 17,000<small>Precio mostrado por la fuente</small></td>
-<td><b>USD 17,000</b><small>Precio base; no es precio final</small></td>
-<td>USD</td><td>0</td><td>2026-09-23 15:00:30</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/hatchback-marca-mazda-modelo-mazda3-mazda-3-sport-high-25-ano-2025-placa-8-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5023789" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5024716 suv - marca: audi  modelo: q3 attraction 35 tfsi s año: 2024 siniestro: 11053911-placa: *****2-ubicación: almacen superbid - lima (lurin-arica) - importante: ver boleta informativa sunarp en anexos audi q3 attraction 35 tfsi s 2024 abierto a pujas ">
-<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>SUV - MARCA: AUDI  MODELO: Q3 ATTRACTION 35 TFSI S AÑO: 2024 SINIESTRO: 11053911-PLACA: *****2-UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA) - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5024716</small></td>
-<td>AUDI</td><td>Q3 ATTRACTION 35 TFSI S</td><td>2024</td>
-<td>USD 8,500<small>Precio mostrado por la fuente</small></td>
-<td><b>USD 8,500</b><small>Precio base; no es precio final</small></td>
-<td>USD</td><td>0</td><td>2026-09-24 12:00:00</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-audi-modelo-q3-attraction-35-tfsi-s-ano-2024-siniestro-11053911-placa-2-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5024716" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5022866 sedan - marca: toyota  modelo: yaris gli 1.3 mt año: 2014 siniestro: 251014529-placa: *****6-ubicación: almacen superbid - lima (lurin-arica) - importante: ver boleta informativa sunarp en anexos toyota yaris gli 1.3 mt 2014 abierto a pujas ">
-<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>SEDAN - MARCA: TOYOTA  MODELO: YARIS GLI 1.3 MT AÑO: 2014 SINIESTRO: 251014529-PLACA: *****6-UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA) - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5022866</small></td>
-<td>TOYOTA</td><td>YARIS GLI 1.3 MT</td><td>2014</td>
-<td>USD 3,500<small>Precio mostrado por la fuente</small></td>
-<td><b>USD 3,500</b><small>Precio base; no es precio final</small></td>
-<td>USD</td><td>0</td><td>2026-09-24 12:00:30</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/sedan-marca-toyota-modelo-yaris-gli-13-mt-ano-2014-siniestro-251014529-placa-6-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5022866" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5022867 sedan - marca: chery  modelo: arrizo 1.5 mt año: 2022 siniestro: 61050170-placa: *****9-ubicación: almacen superbid - lima (lurin-arica) - importante: ver boleta informativa sunarp en anexos chery arrizo 1.5 mt 2022 abierto a pujas ">
-<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>SEDAN - MARCA: CHERY  MODELO: ARRIZO 1.5 MT AÑO: 2022 SINIESTRO: 61050170-PLACA: *****9-UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA) - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5022867</small></td>
-<td>CHERY</td><td>ARRIZO 1.5 MT</td><td>2022</td>
-<td>USD 2,500<small>Precio mostrado por la fuente</small></td>
-<td><b>USD 2,500</b><small>Precio base; no es precio final</small></td>
-<td>USD</td><td>0</td><td>2026-09-24 12:01:00</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/sedan-marca-chery-modelo-arrizo-15-mt-ano-2022-siniestro-61050170-placa-9-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5022867" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5024715 hatchback - marca: chevrolet  modelo: onix 1.0t rs mt año: 2024 siniestro: 231132025-placa: *****6-ubicación: almacen superbid - lima (lurin-arica) - importante: ver boleta informativa sunarp en anexos chevrolet onix 1.0t rs mt 2024 abierto a pujas ">
-<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>HATCHBACK - MARCA: CHEVROLET  MODELO: ONIX 1.0T RS MT AÑO: 2024 SINIESTRO: 231132025-PLACA: *****6-UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA) - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5024715</small></td>
-<td>CHEVROLET</td><td>ONIX 1.0T RS MT</td><td>2024</td>
-<td>USD 4,000<small>Precio mostrado por la fuente</small></td>
-<td><b>USD 4,000</b><small>Precio base; no es precio final</small></td>
-<td>USD</td><td>0</td><td>2026-09-24 12:01:30</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/hatchback-marca-chevrolet-modelo-onix-10t-rs-mt-ano-2024-siniestro-231132025-placa-6-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5024715" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5024717 suv - marca: dfsk  modelo: glory 560 pro 1.8l mt año: 2026 siniestro: 11056270-placa: *****9-ubicación: almacen superbid - lima (lurin-arica) - importante: ver boleta informativa sunarp en anexos dfsk glory 560 pro 1.8l mt 2026 abierto a pujas ">
-<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>SUV - MARCA: DFSK  MODELO: GLORY 560 PRO 1.8L MT AÑO: 2026 SINIESTRO: 11056270-PLACA: *****9-UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA) - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5024717</small></td>
-<td>DFSK</td><td>GLORY 560 PRO 1.8L MT</td><td>2026</td>
-<td>USD 3,000<small>Precio mostrado por la fuente</small></td>
-<td><b>USD 3,000</b><small>Precio base; no es precio final</small></td>
-<td>USD</td><td>0</td><td>2026-09-24 12:02:00</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-dfsk-modelo-glory-560-pro-18l-mt-ano-2026-siniestro-11056270-placa-9-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5024717" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5025687 hatchback - marca: chevrolet  modelo: onix 1.0t rs mt año: 2022 - placa: *****4-ubicación: cajamarquilla - importante: ver boleta informativa sunarp en anexos chevrolet onix 1.0t rs mt 2022 abierto a pujas ">
-<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>HATCHBACK - MARCA: CHEVROLET  MODELO: ONIX 1.0T RS MT AÑO: 2022 - PLACA: *****4-UBICACIÓN: CAJAMARQUILLA - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5025687</small></td>
-<td>CHEVROLET</td><td>ONIX 1.0T RS MT</td><td>2022</td>
+<td><b>HATCHBACK - MARCA: CHEVROLET  MODELO: ONIX 1.0T RS MT AÃ‘O: 2022 - PLACA: *****4-UBICACIÃ“N: CAJAMARQUILLA - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5025687</small></td>
+<td>CHEVROLET</td><td>ONIX 1.0T RS MT AÃ‘O: 2022</td><td>N/D</td>
 <td>USD 4,200<small>Precio mostrado por la fuente</small></td>
 <td><b>USD 4,200</b><small>Precio base; no es precio final</small></td>
 <td>USD</td><td>0</td><td>2026-09-25 12:00:00</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/hatchback-marca-chevrolet-modelo-onix-10t-rs-mt-ano-2022-placa-4-ubicacion-cajamarquilla-importante-ver-boleta-informativa-sunarp-en-anexos-5025687" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5030387 suv - marca: mazda  modelo: cx30 prime 2.0 at 2wd  año: 2025 placa: *****0 - ubicación: almacen alpa - lurin - no se emitirá boleta y/o factura por la venta - firma y entrega con demora de 80 días hábiles a más mazda cx30 prime 2.0 at 2wd 2025 abierto a pujas ">
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/hatchback-marca-chevrolet-modelo-onix-10t-rs-mt-aa-o-2022-placa-4-ubicacia-n-cajamarquilla-importante-ver-boleta-informativa-sunarp-en-anexos-5025687" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5027146 hatchback - marca: toyota  modelo: agya 1.0 mt  aã‘o: 2025 placa: *****8 - ubicaciã“n: almacen alpa - lurin - no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs toyota agya 1.0 mt aã‘o: 2025 abierto a pujas ">
 <td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>SUV - MARCA: MAZDA  MODELO: CX30 PRIME 2.0 AT 2WD  AÑO: 2025 PLACA: *****0 - UBICACIÓN: ALMACEN ALPA - LURIN - NO SE EMITIRÁ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÍAS HÁBILES A MÁS</b><small>Superbid 5030387</small></td>
-<td>MAZDA</td><td>CX30 PRIME 2.0 AT 2WD</td><td>2025</td>
+<td><b>HATCHBACK - MARCA: TOYOTA  MODELO: AGYA 1.0 MT  AÃ‘O: 2025 PLACA: *****8 - UBICACIÃ“N: ALMACEN ALPA - LURIN - NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5027146</small></td>
+<td>TOYOTA</td><td>AGYA 1.0 MT AÃ‘O: 2025</td><td>N/D</td>
+<td>USD 6,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 6,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:00:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/hatchback-marca-toyota-modelo-agya-10-mt-aa-o-2025-placa-8-ubicacia-n-almacen-alpa-lurin-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5027146" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5027147 pick up - marca: toyota  modelo: hilux 4x4 d/c 1gd srv  aã‘o: 2024 placa: *****6 - ubicaciã“n: almacen huancayo - gallegos - no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs toyota hilux 4x4 d/c 1gd srv aã‘o: 2024 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>PICK UP - MARCA: TOYOTA  MODELO: HILUX 4X4 D/C 1GD SRV  AÃ‘O: 2024 PLACA: *****6 - UBICACIÃ“N: ALMACEN HUANCAYO - GALLEGOS - NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5027147</small></td>
+<td>TOYOTA</td><td>HILUX 4X4 D/C 1GD SRV AÃ‘O: 2024</td><td>N/D</td>
+<td>USD 18,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 18,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:00:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/pick-up-marca-toyota-modelo-hilux-4x4-d-c-1gd-srv-aa-o-2024-placa-6-ubicacia-n-almacen-huancayo-gallegos-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5027147" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5027370 suv - marca: geely   modelo: gx3 pro gc mt   aã‘o: 2024   placa: *****8  ubicaciã“n: almacen alpa - lurin - no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs geely gx3 pro gc mt aã‘o: 2024 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SUV - MARCA: GEELY   MODELO: GX3 PRO GC MT   AÃ‘O: 2024   PLACA: *****8  UBICACIÃ“N: ALMACEN ALPA - LURIN - NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5027370</small></td>
+<td>GEELY</td><td>GX3 PRO GC MT AÃ‘O: 2024</td><td>N/D</td>
+<td>USD 10,550<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 10,550</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:00:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-geely-modelo-gx3-pro-gc-mt-aa-o-2024-placa-8-ubicacia-n-almacen-alpa-lurin-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5027370" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5027576 pick up - marca: mitsubishi  modelo: l200 4x4 2.4 td hp glx mt  aã‘o: 2023 placa: *****2 - ubicaciã“n: almacen trujillo - j&amp;j - no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs mitsubishi l200 4x4 2.4 td hp glx mt aã‘o: 2023 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>PICK UP - MARCA: MITSUBISHI  MODELO: L200 4X4 2.4 TD HP GLX MT  AÃ‘O: 2023 PLACA: *****2 - UBICACIÃ“N: ALMACEN TRUJILLO - J&amp;J - NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5027576</small></td>
+<td>MITSUBISHI</td><td>L200 4X4 2.4 TD HP GLX MT AÃ‘O: 2023</td><td>N/D</td>
+<td>USD 15,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 15,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:00:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/pick-up-marca-mitsubishi-modelo-l200-4x4-24-td-hp-glx-mt-aa-o-2023-placa-2-ubicacia-n-almacen-trujillo-j-j-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5027576" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5028873 suv - marca: jac  modelo: js2 js2 1.5 cvt luxury aã‘o: 2026 - placa: *****9-ubicaciã“n: cajamarquilla - importante: ver boleta informativa sunarp en anexos jac js2 js2 1.5 cvt luxury aã‘o: 2026 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SUV - MARCA: JAC  MODELO: JS2 JS2 1.5 CVT LUXURY AÃ‘O: 2026 - PLACA: *****9-UBICACIÃ“N: CAJAMARQUILLA - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5028873</small></td>
+<td>JAC</td><td>JS2 JS2 1.5 CVT LUXURY AÃ‘O: 2026</td><td>N/D</td>
+<td>USD 3,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 3,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:00:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-jac-modelo-js2-js2-15-cvt-luxury-aa-o-2026-placa-9-ubicacia-n-cajamarquilla-importante-ver-boleta-informativa-sunarp-en-anexos-5028873" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5030386 suv - marca: toyota  modelo: fortuner 2.8 adventure d-lux 4x4  aã‘o: 2024 placa: *****9 - ubicaciã“n: almacen trujillo - j&amp;j - no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs toyota fortuner 2.8 adventure d-lux 4x4 aã‘o: 2024 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SUV - MARCA: TOYOTA  MODELO: FORTUNER 2.8 ADVENTURE D-LUX 4X4  AÃ‘O: 2024 PLACA: *****9 - UBICACIÃ“N: ALMACEN TRUJILLO - J&amp;J - NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5030386</small></td>
+<td>TOYOTA</td><td>FORTUNER 2.8 ADVENTURE D-LUX 4X4 AÃ‘O: 2024</td><td>N/D</td>
+<td>USD 19,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 19,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:00:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-toyota-modelo-fortuner-28-adventure-d-lux-4x4-aa-o-2024-placa-9-ubicacia-n-almacen-trujillo-j-j-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5030386" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5030387 suv - marca: mazda  modelo: cx30 prime 2.0 at 2wd  aã‘o: 2025 placa: *****0 - ubicaciã“n: almacen alpa - lurin - no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs mazda cx30 prime 2.0 at 2wd aã‘o: 2025 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SUV - MARCA: MAZDA  MODELO: CX30 PRIME 2.0 AT 2WD  AÃ‘O: 2025 PLACA: *****0 - UBICACIÃ“N: ALMACEN ALPA - LURIN - NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5030387</small></td>
+<td>MAZDA</td><td>CX30 PRIME 2.0 AT 2WD AÃ‘O: 2025</td><td>N/D</td>
 <td>USD 12,000<small>Precio mostrado por la fuente</small></td>
 <td><b>USD 12,000</b><small>Precio base; no es precio final</small></td>
 <td>USD</td><td>0</td><td>2026-09-25 12:00:00</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-mazda-modelo-cx30-prime-20-at-2wd-ano-2025-placa-0-ubicacion-almacen-alpa-lurin-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-dias-habiles-a-mas-5030387" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5025686 remolcador - marca: freightliner  modelo: cl 112 mexico año: 2017 - placa: *****5-ubicación: cajamarquilla - importante: ver boleta informativa sunarp en anexos freightliner cl 112 mexico 2017 abierto a pujas ">
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-mazda-modelo-cx30-prime-20-at-2wd-aa-o-2025-placa-0-ubicacia-n-almacen-alpa-lurin-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5030387" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5030585 suv - marca: toyota   modelo: raize 1.2 mid mt   aã‘o: 2023   placa: *****2  ubicaciã“n: almacen piura - j&amp;j - no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs toyota raize 1.2 mid mt aã‘o: 2023 abierto a pujas ">
 <td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>REMOLCADOR - MARCA: FREIGHTLINER  MODELO: CL 112 MEXICO AÑO: 2017 - PLACA: *****5-UBICACIÓN: CAJAMARQUILLA - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5025686</small></td>
-<td>FREIGHTLINER</td><td>CL 112 MEXICO</td><td>2017</td>
-<td>USD 9,000<small>Precio mostrado por la fuente</small></td>
-<td><b>USD 9,000</b><small>Precio base; no es precio final</small></td>
+<td><b>SUV - MARCA: TOYOTA   MODELO: RAIZE 1.2 MID MT   AÃ‘O: 2023   PLACA: *****2  UBICACIÃ“N: ALMACEN PIURA - J&amp;J - NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5030585</small></td>
+<td>TOYOTA</td><td>RAIZE 1.2 MID MT AÃ‘O: 2023</td><td>N/D</td>
+<td>USD 12,850<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 12,850</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:00:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-toyota-modelo-raize-12-mid-mt-aa-o-2023-placa-2-ubicacia-n-almacen-piura-j-j-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5030585" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5030586 pick up - marca: mazda   modelo: bt-50 bt50 mt 3.2 4x4 d2 ?   aã‘o: 2019   placa: *****8  ubicaciã“n: almacen huancayo - gallegos - no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs mazda bt-50 bt50 mt 3.2 4x4 d2 ? aã‘o: 2019 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>PICK UP - MARCA: MAZDA   MODELO: BT-50 BT50 MT 3.2 4X4 D2 ?   AÃ‘O: 2019   PLACA: *****8  UBICACIÃ“N: ALMACEN HUANCAYO - GALLEGOS - NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5030586</small></td>
+<td>MAZDA</td><td>BT-50 BT50 MT 3.2 4X4 D2 ? AÃ‘O: 2019</td><td>N/D</td>
+<td>USD 15,250<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 15,250</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:00:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/pick-up-marca-mazda-modelo-bt-50-bt50-mt-32-4x4-d2-aa-o-2019-placa-8-ubicacia-n-almacen-huancayo-gallegos-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5030586" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5030587 suv - marca: toyota   modelo: raize 1.2 mid cvt   aã‘o: 2025   placa: *****0  ubicaciã“n: almacen alpa - lurin - no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs toyota raize 1.2 mid cvt aã‘o: 2025 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SUV - MARCA: TOYOTA   MODELO: RAIZE 1.2 MID CVT   AÃ‘O: 2025   PLACA: *****0  UBICACIÃ“N: ALMACEN ALPA - LURIN - NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5030587</small></td>
+<td>TOYOTA</td><td>RAIZE 1.2 MID CVT AÃ‘O: 2025</td><td>N/D</td>
+<td>USD 14,500<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 14,500</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:00:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-toyota-modelo-raize-12-mid-cvt-aa-o-2025-placa-0-ubicacia-n-almacen-alpa-lurin-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5030587" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5031370 pick up - marca: toyota modelo: hilux 4x4 d/c 1gd sr  aã‘o: 2024  placa: *****4 - ubicaciã“n: almacen huancayo - gallegos - importante: â no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs toyota hilux 4x4 d/c 1gd sr aã‘o: 2024 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>PICK UP - MARCA: TOYOTA MODELO: HILUX 4X4 D/C 1GD SR  AÃ‘O: 2024  PLACA: *****4 - UBICACIÃ“N: ALMACEN HUANCAYO - GALLEGOS - IMPORTANTE: Â NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5031370</small></td>
+<td>TOYOTA</td><td>HILUX 4X4 D/C 1GD SR AÃ‘O: 2024</td><td>N/D</td>
+<td>USD 18,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 18,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:00:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/pick-up-marca-toyota-modelo-hilux-4x4-d-c-1gd-sr-aa-o-2024-placa-4-ubicacia-n-almacen-huancayo-gallegos-importante-a-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5031370" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5027366 suv - marca: ssangyong  modelo: all new rexton aut 2.2d 4x4 limited  aã‘o: 2023  placa: *****2 - ubicaciã“n: almacen alpa - lurin - no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs ssangyong all new rexton aut 2.2d 4x4 limited aã‘o: 2023 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SUV - MARCA: SSANGYONG  MODELO: ALL NEW REXTON AUT 2.2D 4X4 LIMITED  AÃ‘O: 2023  PLACA: *****2 - UBICACIÃ“N: ALMACEN ALPA - LURIN - NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5027366</small></td>
+<td>SSANGYONG</td><td>ALL NEW REXTON AUT 2.2D 4X4 LIMITED AÃ‘O: 2023</td><td>N/D</td>
+<td>USD 15,500<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 15,500</b><small>Precio base; no es precio final</small></td>
 <td>USD</td><td>0</td><td>2026-09-25 12:00:30</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/remolcador-marca-freightliner-modelo-cl-112-mexico-ano-2017-placa-5-ubicacion-cajamarquilla-importante-ver-boleta-informativa-sunarp-en-anexos-5025686" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5027146 hatchback - marca: toyota  modelo: agya 1.0 mt  año: 2025 placa: *****8 - ubicación: almacen alpa - lurin - no se emitirá boleta y/o factura por la venta - firma y entrega con demora de 80 días hábiles a más toyota agya 1.0 mt 2025 abierto a pujas ">
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-ssangyong-modelo-all-new-rexton-aut-22d-4x4-limited-aa-o-2023-placa-2-ubicacia-n-almacen-alpa-lurin-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5027366" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5027367 pick up - marca: toyota  modelo: hilux 4x4  aã‘o : 2023  placa: *****7 - ubicaciã“n: almacen huancayo - gallegos - no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs toyota hilux 4x4 aã‘o: 2023 abierto a pujas ">
 <td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>HATCHBACK - MARCA: TOYOTA  MODELO: AGYA 1.0 MT  AÑO: 2025 PLACA: *****8 - UBICACIÓN: ALMACEN ALPA - LURIN - NO SE EMITIRÁ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÍAS HÁBILES A MÁS</b><small>Superbid 5027146</small></td>
-<td>TOYOTA</td><td>AGYA 1.0 MT</td><td>2025</td>
-<td>USD 6,000<small>Precio mostrado por la fuente</small></td>
-<td><b>USD 6,000</b><small>Precio base; no es precio final</small></td>
+<td><b>PICK UP - MARCA: TOYOTA  MODELO: HILUX 4X4  AÃ‘O : 2023  PLACA: *****7 - UBICACIÃ“N: ALMACEN HUANCAYO - GALLEGOS - NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5027367</small></td>
+<td>TOYOTA</td><td>HILUX 4X4 AÃ‘O: 2023</td><td>N/D</td>
+<td>USD 27,500<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 27,500</b><small>Precio base; no es precio final</small></td>
 <td>USD</td><td>0</td><td>2026-09-25 12:00:30</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/hatchback-marca-toyota-modelo-agya-10-mt-ano-2025-placa-8-ubicacion-almacen-alpa-lurin-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-dias-habiles-a-mas-5027146" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5028873 suv - marca: jac  modelo: js2 js2 1.5 cvt luxury año: 2026 - placa: *****9-ubicación: cajamarquilla - importante: ver boleta informativa sunarp en anexos jac js2 js2 1.5 cvt luxury 2026 abierto a pujas ">
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/pick-up-marca-toyota-modelo-hilux-4x4-aa-o-2023-placa-7-ubicacia-n-almacen-huancayo-gallegos-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5027367" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5027368 multipropã“sito - marca: toyota  modelo: avanza 1.5 mt  aã‘o: 2025  placa: *****9 - ubicaciã“n: almacen trujillo - j&amp;j - â no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs toyota avanza 1.5 mt aã‘o: 2025 abierto a pujas ">
 <td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>SUV - MARCA: JAC  MODELO: JS2 JS2 1.5 CVT LUXURY AÑO: 2026 - PLACA: *****9-UBICACIÓN: CAJAMARQUILLA - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5028873</small></td>
-<td>JAC</td><td>JS2 JS2 1.5 CVT LUXURY</td><td>2026</td>
-<td>USD 3,000<small>Precio mostrado por la fuente</small></td>
-<td><b>USD 3,000</b><small>Precio base; no es precio final</small></td>
+<td><b>MULTIPROPÃ“SITO - MARCA: TOYOTA  MODELO: AVANZA 1.5 MT  AÃ‘O: 2025  PLACA: *****9 - UBICACIÃ“N: ALMACEN TRUJILLO - J&amp;J - Â NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5027368</small></td>
+<td>TOYOTA</td><td>AVANZA 1.5 MT AÃ‘O: 2025</td><td>N/D</td>
+<td>USD 5,600<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 5,600</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:00:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/multipropa-sito-marca-toyota-modelo-avanza-15-mt-aa-o-2025-placa-9-ubicacia-n-almacen-trujillo-j-j-a-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5027368" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5027369 hatchback - marca: volkswagen  modelo: polo track 1.6 mec  aã‘o: 2025  placa: *****7 - ubicaciã“n: almacen trujillo - j&amp;j - importante: â no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs volkswagen polo track 1.6 mec aã‘o: 2025 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>HATCHBACK - MARCA: VOLKSWAGEN  MODELO: POLO TRACK 1.6 MEC  AÃ‘O: 2025  PLACA: *****7 - UBICACIÃ“N: ALMACEN TRUJILLO - J&amp;J - IMPORTANTE: Â NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5027369</small></td>
+<td>VOLKSWAGEN</td><td>POLO TRACK 1.6 MEC AÃ‘O: 2025</td><td>N/D</td>
+<td>USD 10,800<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 10,800</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:00:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/hatchback-marca-volkswagen-modelo-polo-track-16-mec-aa-o-2025-placa-7-ubicacia-n-almacen-trujillo-j-j-importante-a-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5027369" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5028070 pick up - marca: toyota  modelo: etios 1.5 mt aã‘o: 2023 placa: *****1 - ubicaciã“n: almacen alpa - lurin - no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs toyota etios 1.5 mt aã‘o: 2023 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>PICK UP - MARCA: TOYOTA  MODELO: ETIOS 1.5 MT AÃ‘O: 2023 PLACA: *****1 - UBICACIÃ“N: ALMACEN ALPA - LURIN - NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5028070</small></td>
+<td>TOYOTA</td><td>ETIOS 1.5 MT AÃ‘O: 2023</td><td>N/D</td>
+<td>USD 5,500<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 5,500</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:00:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/pick-up-marca-toyota-modelo-etios-15-mt-aa-o-2023-placa-1-ubicacia-n-almacen-alpa-lurin-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5028070" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5028072 sedan - marca: toyota   modelo: yaris 1.3 m/t aã‘o: 2023   placa: *****9  ubicaciã“n: almacen alpa - lurin - no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs toyota yaris 1.3 m/t aã‘o: 2023 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SEDAN - MARCA: TOYOTA   MODELO: YARIS 1.3 M/T AÃ‘O: 2023   PLACA: *****9  UBICACIÃ“N: ALMACEN ALPA - LURIN - NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5028072</small></td>
+<td>TOYOTA</td><td>YARIS 1.3 M/T AÃ‘O: 2023</td><td>N/D</td>
+<td>USD 7,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 7,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:00:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/sedan-marca-toyota-modelo-yaris-13-m-t-aa-o-2023-placa-9-ubicacia-n-almacen-alpa-lurin-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5028072" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5030584 pick up - marca: toyota  modelo: hilux 4x4 d/c 1gd sr  aã‘o: 2023  placa: *****5 - ubicaciã“n: almacen alpa - lurin - no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs toyota hilux 4x4 d/c 1gd sr aã‘o: 2023 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>PICK UP - MARCA: TOYOTA  MODELO: HILUX 4X4 D/C 1GD SR  AÃ‘O: 2023  PLACA: *****5 - UBICACIÃ“N: ALMACEN ALPA - LURIN - NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5030584</small></td>
+<td>TOYOTA</td><td>HILUX 4X4 D/C 1GD SR AÃ‘O: 2023</td><td>N/D</td>
+<td>USD 25,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 25,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:00:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/pick-up-marca-toyota-modelo-hilux-4x4-d-c-1gd-sr-aa-o-2023-placa-5-ubicacia-n-almacen-alpa-lurin-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5030584" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5031364 suv - marca: chery modelo: tiggo 7 pro 1.5t cvt lux aã‘o: 2023 placa: *****1 - ubicaciã“n: almacen alpa - lurin - no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs chery tiggo 7 pro 1.5t cvt lux aã‘o: 2023 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SUV - MARCA: CHERY MODELO: TIGGO 7 PRO 1.5T CVT LUX AÃ‘O: 2023 PLACA: *****1 - UBICACIÃ“N: ALMACEN ALPA - LURIN - NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5031364</small></td>
+<td>CHERY</td><td>TIGGO 7 PRO 1.5T CVT LUX AÃ‘O: 2023</td><td>N/D</td>
+<td>USD 7,500<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 7,500</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:00:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-chery-modelo-tiggo-7-pro-15t-cvt-lux-aa-o-2023-placa-1-ubicacia-n-almacen-alpa-lurin-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5031364" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5031365 sedan - marca: toyota  modelo: yaris 1.3 m/t aã‘o: 2025  placa: *****2 - ubicaciã“n: almacen alpa - lurin - importante: ver boleta informativa sunarp en anexos toyota yaris 1.3 m/t aã‘o: 2025 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SEDAN - MARCA: TOYOTA  MODELO: YARIS 1.3 M/T AÃ‘O: 2025  PLACA: *****2 - UBICACIÃ“N: ALMACEN ALPA - LURIN - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5031365</small></td>
+<td>TOYOTA</td><td>YARIS 1.3 M/T AÃ‘O: 2025</td><td>N/D</td>
+<td>USD 8,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 8,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:00:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/sedan-marca-toyota-modelo-yaris-13-m-t-aa-o-2025-placa-2-ubicacia-n-almacen-alpa-lurin-importante-ver-boleta-informativa-sunarp-en-anexos-5031365" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5031408 pick up - marca: toyota   modelo: hilux 4x4 d/c 1gd srv   aã‘o: 2025   placa: *****4  ubicaciã“n: almacen alpa - lurin - no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs toyota hilux 4x4 d/c 1gd srv at aã‘o: 2025 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>PICK UP - MARCA: TOYOTA   MODELO: HILUX 4X4 D/C 1GD SRV   AÃ‘O: 2025   PLACA: *****4  UBICACIÃ“N: ALMACEN ALPA - LURIN - NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5031408</small></td>
+<td>TOYOTA</td><td>HILUX 4X4 D/C 1GD SRV AT AÃ‘O: 2025</td><td>N/D</td>
+<td>USD 20,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 20,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:00:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/pick-up-marca-toyota-modelo-hilux-4x4-d-c-1gd-srv-aa-o-2025-placa-4-ubicacia-n-almacen-alpa-lurin-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5031408" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5028071 suv - marca: lexus  modelo: rx 500h f-sport 4x4   aã‘o: 2023   placa: *****3  ubicaciã“n: por confirmar - no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs lexus rx 500h f-sport 4x4 aã‘o: 2024 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SUV - MARCA: LEXUS  MODELO: RX 500H F-SPORT 4X4   AÃ‘O: 2023   PLACA: *****3  UBICACIÃ“N: POR CONFIRMAR - NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5028071</small></td>
+<td>LEXUS</td><td>RX 500H F-SPORT 4X4 AÃ‘O: 2024</td><td>N/D</td>
+<td>USD 22,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 22,000</b><small>Precio base; no es precio final</small></td>
 <td>USD</td><td>0</td><td>2026-09-25 12:01:00</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-jac-modelo-js2-js2-15-cvt-luxury-ano-2026-placa-9-ubicacion-cajamarquilla-importante-ver-boleta-informativa-sunarp-en-anexos-5028873" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5030388 sedan - marca: toyota  modelo: etios 1.5 mt  año: 2023 placa: *****8 - ubicación: almacen alpa - lurin - no se emitirá boleta y/o factura por la venta - firma y entrega con demora de 80 días hábiles a más toyota etios 1.5 mt 2023 abierto a pujas ">
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-lexus-modelo-rx-500h-f-sport-4x4-aa-o-2023-placa-3-ubicacia-n-por-confirmar-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5028071" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5028073 sedan - marca: toyota  modelo: etios 1.5 mt aã‘o: 2022 placa: *****3 - ubicaciã“n: almacen piura - j&amp;j - no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs toyota etios 1.5 mt aã‘o: 2022 abierto a pujas ">
 <td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>SEDAN - MARCA: TOYOTA  MODELO: ETIOS 1.5 MT  AÑO: 2023 PLACA: *****8 - UBICACIÓN: ALMACEN ALPA - LURIN - NO SE EMITIRÁ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÍAS HÁBILES A MÁS</b><small>Superbid 5030388</small></td>
-<td>TOYOTA</td><td>ETIOS 1.5 MT</td><td>2023</td>
+<td><b>SEDAN - MARCA: TOYOTA  MODELO: ETIOS 1.5 MT AÃ‘O: 2022 PLACA: *****3 - UBICACIÃ“N: ALMACEN PIURA - J&amp;J - NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5028073</small></td>
+<td>TOYOTA</td><td>ETIOS 1.5 MT AÃ‘O: 2022</td><td>N/D</td>
 <td>USD 5,500<small>Precio mostrado por la fuente</small></td>
 <td><b>USD 5,500</b><small>Precio base; no es precio final</small></td>
 <td>USD</td><td>0</td><td>2026-09-25 12:01:00</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/sedan-marca-toyota-modelo-etios-15-mt-ano-2023-placa-8-ubicacion-almacen-alpa-lurin-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-dias-habiles-a-mas-5030388" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5030386 suv - marca: toyota  modelo: fortuner 2.8 adventure d-lux 4x4  año: 2024 placa: *****9 - ubicación: almacen trujillo - j&amp;j - no se emitirá boleta y/o factura por la venta - firma y entrega con demora de 80 días hábiles a más toyota fortuner 2.8 adventure d-lux 4x4 2024 abierto a pujas ">
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/sedan-marca-toyota-modelo-etios-15-mt-aa-o-2022-placa-3-ubicacia-n-almacen-piura-j-j-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5028073" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5028074 suv - marca: changan modelo: cs15 new cs15 elite 1.5l mt  aã‘o: 2022   placa: *****0  ubicaciã“n: almacen trujillo - j&amp;j - no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs changan cs15 new cs15 elite 1.5l mt aã‘o: 2022 abierto a pujas ">
 <td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>SUV - MARCA: TOYOTA  MODELO: FORTUNER 2.8 ADVENTURE D-LUX 4X4  AÑO: 2024 PLACA: *****9 - UBICACIÓN: ALMACEN TRUJILLO - J&amp;J - NO SE EMITIRÁ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÍAS HÁBILES A MÁS</b><small>Superbid 5030386</small></td>
-<td>TOYOTA</td><td>FORTUNER 2.8 ADVENTURE D-LUX 4X4</td><td>2024</td>
-<td>USD 19,000<small>Precio mostrado por la fuente</small></td>
-<td><b>USD 19,000</b><small>Precio base; no es precio final</small></td>
-<td>USD</td><td>0</td><td>2026-09-25 12:01:30</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-toyota-modelo-fortuner-28-adventure-d-lux-4x4-ano-2024-placa-9-ubicacion-almacen-trujillo-j-j-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-dias-habiles-a-mas-5030386" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5027147 pick up - marca: toyota  modelo: hilux 4x4 d/c 1gd srv  año: 2024 placa: *****6 - ubicación: almacen huancayo - gallegos - no se emitirá boleta y/o factura por la venta - firma y entrega con demora de 80 días hábiles a más toyota hilux 4x4 d/c 1gd srv 2024 abierto a pujas ">
+<td><b>SUV - MARCA: CHANGAN MODELO: CS15 NEW CS15 ELITE 1.5L MT  AÃ‘O: 2022   PLACA: *****0  UBICACIÃ“N: ALMACEN TRUJILLO - J&amp;J - NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5028074</small></td>
+<td>CHANGAN</td><td>CS15 NEW CS15 ELITE 1.5L MT AÃ‘O: 2022</td><td>N/D</td>
+<td>USD 5,500<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 5,500</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:01:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-changan-modelo-cs15-new-cs15-elite-15l-mt-aa-o-2022-placa-0-ubicacia-n-almacen-trujillo-j-j-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5028074" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5028075 suv - marca: toyota   modelo: land cruiser prado 2.7 tx-l at aã‘o: 2022   placa: *****3 ubicaciã“n: almacen trujillo - j&amp; - no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs toyota land cruiser prado 2.7 tx-l at aã‘o: 2022 abierto a pujas ">
 <td><span class="badge neutral">ABIERTO A PUJAS</span></td>
-<td><b>PICK UP - MARCA: TOYOTA  MODELO: HILUX 4X4 D/C 1GD SRV  AÑO: 2024 PLACA: *****6 - UBICACIÓN: ALMACEN HUANCAYO - GALLEGOS - NO SE EMITIRÁ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÍAS HÁBILES A MÁS</b><small>Superbid 5027147</small></td>
-<td>TOYOTA</td><td>HILUX 4X4 D/C 1GD SRV</td><td>2024</td>
+<td><b>SUV - MARCA: TOYOTA   MODELO: LAND CRUISER PRADO 2.7 TX-L AT AÃ‘O: 2022   PLACA: *****3 UBICACIÃ“N: ALMACEN TRUJILLO - J&amp; - NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5028075</small></td>
+<td>TOYOTA</td><td>LAND CRUISER PRADO 2.7 TX-L AT AÃ‘O: 2022</td><td>N/D</td>
+<td>USD 20,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 20,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:01:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-toyota-modelo-land-cruiser-prado-27-tx-l-at-aa-o-2022-placa-3-ubicacia-n-almacen-trujillo-j-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5028075" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5031366 suv - marca: toyota   modelo: corolla cross 1.8 hev premium cvt  aã‘o: 2025 placa: *****6  ubicaciã“n: almacen huancayo - gallegos - no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs toyota corolla cross 1.8 hev premium cvt aã‘o: 2025 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SUV - MARCA: TOYOTA   MODELO: COROLLA CROSS 1.8 HEV PREMIUM CVT  AÃ‘O: 2025 PLACA: *****6  UBICACIÃ“N: ALMACEN HUANCAYO - GALLEGOS - NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5031366</small></td>
+<td>TOYOTA</td><td>COROLLA CROSS 1.8 HEV PREMIUM CVT AÃ‘O: 2025</td><td>N/D</td>
+<td>USD 12,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 12,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:01:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-toyota-modelo-corolla-cross-18-hev-premium-cvt-aa-o-2025-placa-6-ubicacia-n-almacen-huancayo-gallegos-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5031366" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5031367 suv - marca: volkswagen modelo: nivus comfortline 170 tsi me  aã‘o: 2023   placa: *****7  ubicaciã“n: almacen piura - j&amp;j- no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs volkswagen nivus comfortline 170 tsi me aã‘o: 2023 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SUV - MARCA: VOLKSWAGEN MODELO: NIVUS COMFORTLINE 170 TSI ME  AÃ‘O: 2023   PLACA: *****7  UBICACIÃ“N: ALMACEN PIURA - J&amp;J- NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5031367</small></td>
+<td>VOLKSWAGEN</td><td>NIVUS COMFORTLINE 170 TSI ME AÃ‘O: 2023</td><td>N/D</td>
+<td>USD 9,500<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 9,500</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:01:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/suv-marca-volkswagen-modelo-nivus-comfortline-170-tsi-me-aa-o-2023-placa-7-ubicacia-n-almacen-piura-j-j-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5031367" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5031368 multipropã“sito - marca: chevrolet modelo: n400 move 1.5 mt pasajeros aã‘o: 2025  placa: *****3 - ubicaciã“n: almacen trujillo - j&amp;j - no se emitirã boleta y/o factura por la venta - firma y entrega con demora de 80 dãas hãbiles a mãs chevrolet n400 move 1.5 mt pasajeros aã‘o: 2025 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>MULTIPROPÃ“SITO - MARCA: CHEVROLET MODELO: N400 MOVE 1.5 MT PASAJEROS AÃ‘O: 2025  PLACA: *****3 - UBICACIÃ“N: ALMACEN TRUJILLO - J&amp;J - NO SE EMITIRÃ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÃAS HÃBILES A MÃS</b><small>Superbid 5031368</small></td>
+<td>CHEVROLET</td><td>N400 MOVE 1.5 MT PASAJEROS AÃ‘O: 2025</td><td>N/D</td>
 <td>USD 18,000<small>Precio mostrado por la fuente</small></td>
 <td><b>USD 18,000</b><small>Precio base; no es precio final</small></td>
-<td>USD</td><td>0</td><td>2026-09-25 12:02:00</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/pick-up-marca-toyota-modelo-hilux-4x4-d-c-1gd-srv-ano-2024-placa-6-ubicacion-almacen-huancayo-gallegos-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-dias-habiles-a-mas-5027147" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5029680 baranda - marca: jac  modelo:  hfc1040kn d400 121 chc 4.0t eiv  año: 2025 placa: *****4  - ubicación: almacen superbid - lima (lurin-arica) - importante: ver boleta informativa sunarp en anexos jac hfc1040kn d400 121 chc 4.0t eiv 2025 abierto a pujas ">
+<td>USD</td><td>0</td><td>2026-09-25 12:01:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/multipropa-sito-marca-chevrolet-modelo-n400-move-15-mt-pasajeros-aa-o-2025-placa-3-ubicacia-n-almacen-trujillo-j-j-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-da-as-ha-biles-a-ma-s-5031368" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5031369 sedan - marca: toyota modelo: yaris 1.3 m/t  año: 2025   placa: *****5  ubicación: almacen trujillo - j&amp;j - no se emitirá boleta y/o factura por la venta - firma y entrega con demora de 80 días hábiles a más toyota yaris 1.3 m/t 2025 abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>SEDAN - MARCA: TOYOTA MODELO: YARIS 1.3 M/T  AÑO: 2025   PLACA: *****5  UBICACIÓN: ALMACEN TRUJILLO - J&amp;J - NO SE EMITIRÁ BOLETA Y/O FACTURA POR LA VENTA - FIRMA Y ENTREGA CON DEMORA DE 80 DÍAS HÁBILES A MÁS</b><small>Superbid 5031369</small></td>
+<td>TOYOTA</td><td>YARIS 1.3 M/T</td><td>2025</td>
+<td>USD 8,000<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 8,000</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-09-25 12:01:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/sedan-marca-toyota-modelo-yaris-13-m-t-ano-2025-placa-5-ubicacion-almacen-trujillo-j-j-no-se-emitira-boleta-y-o-factura-por-la-venta-firma-y-entrega-con-demora-de-80-dias-habiles-a-mas-5031369" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5029680 baranda - marca: jac  modelo:  hfc1040kn d400 121 chc 4.0t eiv  año: 2025 placa: *****4  - ubicación: almacen superbid - lima (lurin-arica) - importante: ver boleta informativa sunarp en anexos jac hfc1040kn d400 121 chc 4.0t eiv 2025 abierto a pujas ">
 <td><span class="badge neutral">ABIERTO A PUJAS</span></td>
 <td><b>BARANDA - MARCA: JAC  MODELO:  HFC1040KN D400 121 CHC 4.0T EIV  AÑO: 2025 PLACA: *****4  - UBICACIÓN: ALMACEN SUPERBID - LIMA (LURIN-ARICA) - IMPORTANTE: VER BOLETA INFORMATIVA SUNARP EN ANEXOS</b><small>Superbid 5029680</small></td>
 <td>JAC</td><td>HFC1040KN D400 121 CHC 4.0T EIV</td><td>2025</td>
 <td>USD 15,000<small>Precio mostrado por la fuente</small></td>
 <td><b>USD 15,000</b><small>Precio base; no es precio final</small></td>
 <td>USD</td><td>0</td><td>2026-09-28 15:00:00</td>
-<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/baranda-marca-jac-modelo-hfc1040kn-d400-121-chc-40t-eiv-ano-2025-placa-4-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5029680" target="_blank">Ver lote ↗</a></td></tr></tbody></table></div>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/baranda-marca-jac-modelo-hfc1040kn-d400-121-chc-40t-eiv-ano-2025-placa-4-ubicacion-almacen-superbid-lima-lurin-arica-importante-ver-boleta-informativa-sunarp-en-anexos-5029680" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5031422 lote de 18 artículos de riego y ferretería: mangueras, microtubo, válvulas y conexiones 8 mm - marcas: stanley, tekno - modelos: arco de sierra 12&quot;, válvula oblicua 50 mm, manguera 16 mm (21 rollos x 100 m) - ubicación: carabayllo - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE 18 ARTÍCULOS DE RIEGO Y FERRETERÍA: MANGUERAS, MICROTUBO, VÁLVULAS Y CONEXIONES 8 MM - MARCAS: STANLEY, TEKNO - MODELOS: ARCO DE SIERRA 12&quot;, VÁLVULA OBLICUA 50 MM, MANGUERA 16 MM (21 ROLLOS X 100 M) - UBICACIÓN: CARABAYLLO - FOTOS REFERENCIALES</b><small>Superbid 5031422</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 1,050<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 1,050</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:00:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-18-articulos-de-riego-y-ferreteria-mangueras-microtubo-valvulas-y-conexiones-8-mm-marcas-stanley-tekno-modelos-arco-de-sierra-12-valvula-oblicua-50-mm-manguera-16-mm-21-rollos-x-100-m-ubicacion-carabayllo-fotos-referenciales-5031422" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5028156 lote de más de 75 artículos de construcción, pinturas y ferretería - marcas: dewalt, bosch, norton, sika, oerlikon, anypsa, chema - modelos: disco dewalt 9&quot;, sikaflex fc+ 300 ml, electrodo supercito 1/8&quot; - ubicación: chiclayo - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE MÁS DE 75 ARTÍCULOS DE CONSTRUCCIÓN, PINTURAS Y FERRETERÍA - MARCAS: DEWALT, BOSCH, NORTON, SIKA, OERLIKON, ANYPSA, CHEMA - MODELOS: DISCO DEWALT 9&quot;, SIKAFLEX FC+ 300 ML, ELECTRODO SUPERCITO 1/8&quot; - UBICACIÓN: CHICLAYO - FOTOS REFERENCIALES</b><small>Superbid 5028156</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 4,150<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 4,150</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:00:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-mas-de-75-articulos-de-construccion-pinturas-y-ferreteria-marcas-dewalt-bosch-norton-sika-oerlikon-anypsa-chema-modelos-disco-dewalt-9-sikaflex-fc-300-ml-electrodo-supercito-1-8-ubicacion-chiclayo-fotos-referenciales-5028156" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5028155 lote de más de 100 artículos: tuberías pvc uf (75 a 500 mm) y sch-40 4&quot;, codos, tees, bridas, reducciones, anillos de caucho y válvulas - modelos: válvula eléctrica 150 pga, unión autoportante dn100 hd pn16 - ubicación: chiclayo - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE MÁS DE 100 ARTÍCULOS: TUBERÍAS PVC UF (75 A 500 MM) Y SCH-40 4&quot;, CODOS, TEES, BRIDAS, REDUCCIONES, ANILLOS DE CAUCHO Y VÁLVULAS - MODELOS: VÁLVULA ELÉCTRICA 150 PGA, UNIÓN AUTOPORTANTE DN100 HD PN16 - UBICACIÓN: CHICLAYO - FOTOS REFERENCIALES</b><small>Superbid 5028155</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 7,350<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 7,350</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:01:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-mas-de-100-articulos-tuberias-pvc-uf-75-a-500-mm-y-sch-40-4-codos-tees-bridas-reducciones-anillos-de-caucho-y-valvulas-modelos-valvula-electrica-150-pga-union-autoportante-dn100-hd-pn16-ubicacion-chiclayo-fotos-referenciales-5028155" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5031421 lote de más de 100 artículos: tuberías y accesorios pvc/hdpe, goteros, drywall, eléctricos, herramientas, agroinsumos - marcas: 3m, truper, plasson, oatey, sika, gyplac - modelos: temflex 1600, válvula 1 1/2&quot; - ubicación: chilca - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE MÁS DE 100 ARTÍCULOS: TUBERÍAS Y ACCESORIOS PVC/HDPE, GOTEROS, DRYWALL, ELÉCTRICOS, HERRAMIENTAS, AGROINSUMOS - MARCAS: 3M, TRUPER, PLASSON, OATEY, SIKA, GYPLAC - MODELOS: TEMFLEX 1600, VÁLVULA 1 1/2&quot; - UBICACIÓN: CHILCA - FOTOS REFERENCIALES</b><small>Superbid 5031421</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 3,700<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 3,700</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:01:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-mas-de-100-articulos-tuberias-y-accesorios-pvc-hdpe-goteros-drywall-electricos-herramientas-agroinsumos-marcas-3m-truper-plasson-oatey-sika-gyplac-modelos-temflex-1600-valvula-1-1-2-ubicacion-chilca-fotos-referenciales-5031421" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5028154 lote de más de 100 artículos: rodajes, abrazaderas, herramientas, eléctricos, pinturas, sanitarios y ferretería - marcas: skf, dremel, sika, philips, tramontina, ubermann - modelos: dremel 290, sikadur 32 - ubicación: ica - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE MÁS DE 100 ARTÍCULOS: RODAJES, ABRAZADERAS, HERRAMIENTAS, ELÉCTRICOS, PINTURAS, SANITARIOS Y FERRETERÍA - MARCAS: SKF, DREMEL, SIKA, PHILIPS, TRAMONTINA, UBERMANN - MODELOS: DREMEL 290, SIKADUR 32 - UBICACIÓN: ICA - FOTOS REFERENCIALES</b><small>Superbid 5028154</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 4,150<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 4,150</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:02:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-mas-de-100-articulos-rodajes-abrazaderas-herramientas-electricos-pinturas-sanitarios-y-ferreteria-marcas-skf-dremel-sika-philips-tramontina-ubermann-modelos-dremel-290-sikadur-32-ubicacion-ica-fotos-referenciales-5028154" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5028153 lote de repuestos de línea amarilla y vehiculares: filtros, sellos mecánicos, cámaras, carburadores y más - marcas: jcb, ngk, goodyear, husqvarna - modelos: filtro jcb 320/a7124, cámara 1000 x 20, pulmón t24/30 - ubicación: ica - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE REPUESTOS DE LÍNEA AMARILLA Y VEHICULARES: FILTROS, SELLOS MECÁNICOS, CÁMARAS, CARBURADORES Y MÁS - MARCAS: JCB, NGK, GOODYEAR, HUSQVARNA - MODELOS: FILTRO JCB 320/A7124, CÁMARA 1000 X 20, PULMÓN T24/30 - UBICACIÓN: ICA - FOTOS REFERENCIALES</b><small>Superbid 5028153</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 1,150<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 1,150</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:02:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-repuestos-de-linea-amarilla-y-vehiculares-filtros-sellos-mecanicos-camaras-carburadores-y-mas-marcas-jcb-ngk-goodyear-husqvarna-modelos-filtro-jcb-320-a7124-camara-1000-x-20-pulmon-t24-30-ubicacion-ica-fotos-referenciales-5028153" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5031420 lote de más de 70 artículos de riego: tuberías pvc 6&quot; y hdpe 200 mm, accesorios pvc/hdpe/hd, bridas, goteo 16 mm y filtro de anillos - marcas: rain bird - modelos: boquilla rvan-24, unión autoportante dn100 pn16 - ubicación: ica - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE MÁS DE 70 ARTÍCULOS DE RIEGO: TUBERÍAS PVC 6&quot; Y HDPE 200 MM, ACCESORIOS PVC/HDPE/HD, BRIDAS, GOTEO 16 MM Y FILTRO DE ANILLOS - MARCAS: RAIN BIRD - MODELOS: BOQUILLA RVAN-24, UNIÓN AUTOPORTANTE DN100 PN16 - UBICACIÓN: ICA - FOTOS REFERENCIALES</b><small>Superbid 5031420</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 4,350<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 4,350</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:03:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-mas-de-70-articulos-de-riego-tuberias-pvc-6-y-hdpe-200-mm-accesorios-pvc-hdpe-hd-bridas-goteo-16-mm-y-filtro-de-anillos-marcas-rain-bird-modelos-boquilla-rvan-24-union-autoportante-dn100-pn16-ubicacion-ica-fotos-referenciales-5031420" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5028152 lote de más de 60 artículos eléctricos: cables n2xoh, lsoh, nyy y thw, tuberías y curvas pvc-sap 4&quot;, terminales y diferenciales - marcas: schneider, 3m - modelos: ez9r36240 2p 40a - ubicación: mala - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE MÁS DE 60 ARTÍCULOS ELÉCTRICOS: CABLES N2XOH, LSOH, NYY Y THW, TUBERÍAS Y CURVAS PVC-SAP 4&quot;, TERMINALES Y DIFERENCIALES - MARCAS: SCHNEIDER, 3M - MODELOS: EZ9R36240 2P 40A - UBICACIÓN: MALA - FOTOS REFERENCIALES</b><small>Superbid 5028152</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 5,700<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 5,700</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:03:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-mas-de-60-articulos-electricos-cables-n2xoh-lsoh-nyy-y-thw-tuberias-y-curvas-pvc-sap-4-terminales-y-diferenciales-marcas-schneider-3m-modelos-ez9r36240-2p-40a-ubicacion-mala-fotos-referenciales-5028152" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5028151 lote de repuestos y equipos: filtros jcb de aire, aceite, combustible e hidráulico, bujías ngk, reflectores led 400w y punta sds max - marcas: jcb, ngk, makita, philips - modelos: 320/b4420, 320/a7170, bpr6es - ubicación: mala - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE REPUESTOS Y EQUIPOS: FILTROS JCB DE AIRE, ACEITE, COMBUSTIBLE E HIDRÁULICO, BUJÍAS NGK, REFLECTORES LED 400W Y PUNTA SDS MAX - MARCAS: JCB, NGK, MAKITA, PHILIPS - MODELOS: 320/B4420, 320/A7170, BPR6ES - UBICACIÓN: MALA - FOTOS REFERENCIALES</b><small>Superbid 5028151</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 1,750<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 1,750</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:04:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-repuestos-y-equipos-filtros-jcb-de-aire-aceite-combustible-e-hidraulico-bujias-ngk-reflectores-led-400w-y-punta-sds-max-marcas-jcb-ngk-makita-philips-modelos-320-b4420-320-a7170-bpr6es-ubicacion-mala-fotos-referenciales-5028151" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5031419 lote de más de 150 artículos de construcción: bandejas metálicas, acero liso 3/4&quot;, triplay fenólico, discos, pinturas, pegamentos y herramientas - marcas: 3m, truper, kamasa, oatey, norton - modelos: km-514 - ubicación: mala - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE MÁS DE 150 ARTÍCULOS DE CONSTRUCCIÓN: BANDEJAS METÁLICAS, ACERO LISO 3/4&quot;, TRIPLAY FENÓLICO, DISCOS, PINTURAS, PEGAMENTOS Y HERRAMIENTAS - MARCAS: 3M, TRUPER, KAMASA, OATEY, NORTON - MODELOS: KM-514 - UBICACIÓN: MALA - FOTOS REFERENCIALES</b><small>Superbid 5031419</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 13,300<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 13,300</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:04:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-mas-de-150-articulos-de-construccion-bandejas-metalicas-acero-liso-3-4-triplay-fenolico-discos-pinturas-pegamentos-y-herramientas-marcas-3m-truper-kamasa-oatey-norton-modelos-km-514-ubicacion-mala-fotos-referenciales-5031419" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5031418 lote de más de 180 artículos de riego: tuberías pvc 90 mm y desagüe 200 mm, hdpe, accesorios pvc/pe, válvulas y azufre - marcas: rain bird, azud, hadar - modelos: válvula 150 pga, decodificador fd-101 - ubicación: mala - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE MÁS DE 180 ARTÍCULOS DE RIEGO: TUBERÍAS PVC 90 MM Y DESAGÜE 200 MM, HDPE, ACCESORIOS PVC/PE, VÁLVULAS Y AZUFRE - MARCAS: RAIN BIRD, AZUD, HADAR - MODELOS: VÁLVULA 150 PGA, DECODIFICADOR FD-101 - UBICACIÓN: MALA - FOTOS REFERENCIALES</b><small>Superbid 5031418</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 10,500<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 10,500</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:05:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-mas-de-180-articulos-de-riego-tuberias-pvc-90-mm-y-desague-200-mm-hdpe-accesorios-pvc-pe-valvulas-y-azufre-marcas-rain-bird-azud-hadar-modelos-valvula-150-pga-decodificador-fd-101-ubicacion-mala-fotos-referenciales-5031418" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5028150 lote de más de 50 artículos: material eléctrico, fusibles, medidor trifásico, cables, herramientas, mayólica, sogas y madera - marcas: rubi, ge, ls, semikron - modelos: medidor dts27, contactor mc-65a - ubicación: pachacamac - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE MÁS DE 50 ARTÍCULOS: MATERIAL ELÉCTRICO, FUSIBLES, MEDIDOR TRIFÁSICO, CABLES, HERRAMIENTAS, MAYÓLICA, SOGAS Y MADERA - MARCAS: RUBI, GE, LS, SEMIKRON - MODELOS: MEDIDOR DTS27, CONTACTOR MC-65A - UBICACIÓN: PACHACAMAC - FOTOS REFERENCIALES</b><small>Superbid 5028150</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 4,650<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 4,650</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:05:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-mas-de-50-articulos-material-electrico-fusibles-medidor-trifasico-cables-herramientas-mayolica-sogas-y-madera-marcas-rubi-ge-ls-semikron-modelos-medidor-dts27-contactor-mc-65a-ubicacion-pachacamac-fotos-referenciales-5028150" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5031417 lote de 13 artículos de repuestos: filtros jcb de combustible e hidráulico, filtros 3m p100, llantas y cámaras para trimoto y sellos - marcas: jcb, 3m, fleetguard, purolator - modelos: 581/18020, 3m 2097 - ubicación: pachacamac - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE 13 ARTÍCULOS DE REPUESTOS: FILTROS JCB DE COMBUSTIBLE E HIDRÁULICO, FILTROS 3M P100, LLANTAS Y CÁMARAS PARA TRIMOTO Y SELLOS - MARCAS: JCB, 3M, FLEETGUARD, PUROLATOR - MODELOS: 581/18020, 3M 2097 - UBICACIÓN: PACHACAMAC - FOTOS REFERENCIALES</b><small>Superbid 5031417</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 450<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 450</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:06:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-13-articulos-de-repuestos-filtros-jcb-de-combustible-e-hidraulico-filtros-3m-p100-llantas-y-camaras-para-trimoto-y-sellos-marcas-jcb-3m-fleetguard-purolator-modelos-581-18020-3m-2097-ubicacion-pachacamac-fotos-referenciales-5031417" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5031416 lote de más de 75 artículos de riego: tuberías pvc 250 y 630 mm, accesorios pvc/hdpe, electrosoldables 250 mm, conectores y codos 16 mm - marcas: pavco, tuboplast, luflex - modelos: tubería pvc 250 mm c-15 - ubicación: pachacamac - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE MÁS DE 75 ARTÍCULOS DE RIEGO: TUBERÍAS PVC 250 Y 630 MM, ACCESORIOS PVC/HDPE, ELECTROSOLDABLES 250 MM, CONECTORES Y CODOS 16 MM - MARCAS: PAVCO, TUBOPLAST, LUFLEX - MODELOS: TUBERÍA PVC 250 MM C-15 - UBICACIÓN: PACHACAMAC - FOTOS REFERENCIALES</b><small>Superbid 5031416</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 10,500<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 10,500</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:06:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-mas-de-75-articulos-de-riego-tuberias-pvc-250-y-630-mm-accesorios-pvc-hdpe-electrosoldables-250-mm-conectores-y-codos-16-mm-marcas-pavco-tuboplast-luflex-modelos-tuberia-pvc-250-mm-c-15-ubicacion-pachacamac-fotos-referenciales-5031416" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5028149 lote de más de 75 artículos de ferretería y construcción: pinturas, acero corrugado, pernos, tuberías pvc, cable thw, madera - marcas: truper, cpp, anypsa, oatey, trébol - modelos: pti-500, tht519191, a107 - ubicación: pisco - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE MÁS DE 75 ARTÍCULOS DE FERRETERÍA Y CONSTRUCCIÓN: PINTURAS, ACERO CORRUGADO, PERNOS, TUBERÍAS PVC, CABLE THW, MADERA - MARCAS: TRUPER, CPP, ANYPSA, OATEY, TRÉBOL - MODELOS: PTI-500, THT519191, A107 - UBICACIÓN: PISCO - FOTOS REFERENCIALES</b><small>Superbid 5028149</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 3,350<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 3,350</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:07:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-mas-de-75-articulos-de-ferreteria-y-construccion-pinturas-acero-corrugado-pernos-tuberias-pvc-cable-thw-madera-marcas-truper-cpp-anypsa-oatey-trebol-modelos-pti-500-tht519191-a107-ubicacion-pisco-fotos-referenciales-5028149" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5028148 lote de más de 45 artículos de riego: tuberías pvc 160mm, anillos de caucho, codos, reducciones, uniones, válvulas, manguera c/ gotero - marcas: a.r.i., luflex, termoplast - modelos: sdr17, iso 7259, iso 4422 - ubicación: pisco - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE MÁS DE 45 ARTÍCULOS DE RIEGO: TUBERÍAS PVC 160MM, ANILLOS DE CAUCHO, CODOS, REDUCCIONES, UNIONES, VÁLVULAS, MANGUERA C/ GOTERO - MARCAS: A.R.I., LUFLEX, TERMOPLAST - MODELOS: SDR17, ISO 7259, ISO 4422 - UBICACIÓN: PISCO - FOTOS REFERENCIALES</b><small>Superbid 5028148</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 4,700<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 4,700</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:07:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-mas-de-45-articulos-de-riego-tuberias-pvc-160mm-anillos-de-caucho-codos-reducciones-uniones-valvulas-manguera-c-gotero-marcas-ari-luflex-termoplast-modelos-sdr17-iso-7259-iso-4422-ubicacion-pisco-fotos-referenciales-5028148" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5031415 lote de más de 85 artículos de ferretería y construcción: yeso, cemento, clavos, pinturas, selladores, plástico, alambre - marcas: cpp, anypsa, bosch, oerlikon, truper, 3m - modelos: supercito e7018, scotch 23 - ubicación: piura - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE MÁS DE 85 ARTÍCULOS DE FERRETERÍA Y CONSTRUCCIÓN: YESO, CEMENTO, CLAVOS, PINTURAS, SELLADORES, PLÁSTICO, ALAMBRE - MARCAS: CPP, ANYPSA, BOSCH, OERLIKON, TRUPER, 3M - MODELOS: SUPERCITO E7018, SCOTCH 23 - UBICACIÓN: PIURA - FOTOS REFERENCIALES</b><small>Superbid 5031415</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 5,650<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 5,650</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:08:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-mas-de-85-articulos-de-ferreteria-y-construccion-yeso-cemento-clavos-pinturas-selladores-plastico-alambre-marcas-cpp-anypsa-bosch-oerlikon-truper-3m-modelos-supercito-e7018-scotch-23-ubicacion-piura-fotos-referenciales-5031415" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5031414 lote de más de 30 artículos de herramientas: picos, rastrillos, cinceles, bruñas, escuadras, badilejos, winchas - marcas: truper, tramontina, bahco, stanley, nicholson - modelos: e-8x12, ct-608mr, p126-22-f - ubicación: piura - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE MÁS DE 30 ARTÍCULOS DE HERRAMIENTAS: PICOS, RASTRILLOS, CINCELES, BRUÑAS, ESCUADRAS, BADILEJOS, WINCHAS - MARCAS: TRUPER, TRAMONTINA, BAHCO, STANLEY, NICHOLSON - MODELOS: E-8X12, CT-608MR, P126-22-F - UBICACIÓN: PIURA - FOTOS REFERENCIALES</b><small>Superbid 5031414</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 1,050<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 1,050</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:08:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-mas-de-30-articulos-de-herramientas-picos-rastrillos-cinceles-brunas-escuadras-badilejos-winchas-marcas-truper-tramontina-bahco-stanley-nicholson-modelos-e-8x12-ct-608mr-p126-22-f-ubicacion-piura-fotos-referenciales-5031414" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5031413 lote de más de 110 artículos de riego: tuberías pvc 3&quot; y 315mm, codos, tees, tapones, adaptadores, bridas, válvulas hd 110mm - marcas: plasson, luflex, sanking - modelos: sdr17, pe100, iso 4427 - ubicación: piura - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE MÁS DE 110 ARTÍCULOS DE RIEGO: TUBERÍAS PVC 3&quot; Y 315MM, CODOS, TEES, TAPONES, ADAPTADORES, BRIDAS, VÁLVULAS HD 110MM - MARCAS: PLASSON, LUFLEX, SANKING - MODELOS: SDR17, PE100, ISO 4427 - UBICACIÓN: PIURA - FOTOS REFERENCIALES</b><small>Superbid 5031413</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 16,450<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 16,450</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:09:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-mas-de-110-articulos-de-riego-tuberias-pvc-3-y-315mm-codos-tees-tapones-adaptadores-bridas-valvulas-hd-110mm-marcas-plasson-luflex-sanking-modelos-sdr17-pe100-iso-4427-ubicacion-piura-fotos-referenciales-5031413" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5031412 lote de más de 100 artículos de ferretería y electricidad: cables, placas de concreto, discos, arandelas, pernos, calaminas - marcas: truper, celsa, chema, sika, dewalt - modelos: pti-500, lsoh-90 - ubicación: punta hermosa - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE MÁS DE 100 ARTÍCULOS DE FERRETERÍA Y ELECTRICIDAD: CABLES, PLACAS DE CONCRETO, DISCOS, ARANDELAS, PERNOS, CALAMINAS - MARCAS: TRUPER, CELSA, CHEMA, SIKA, DEWALT - MODELOS: PTI-500, LSOH-90 - UBICACIÓN: PUNTA HERMOSA - FOTOS REFERENCIALES</b><small>Superbid 5031412</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 5,450<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 5,450</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:09:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-mas-de-100-articulos-de-ferreteria-y-electricidad-cables-placas-de-concreto-discos-arandelas-pernos-calaminas-marcas-truper-celsa-chema-sika-dewalt-modelos-pti-500-lsoh-90-ubicacion-punta-hermosa-fotos-referenciales-5031412" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5031411 lote de más de 5 artículos de línea amarilla: filtros de combustible, baterías, cargador de batería, bomba trasegadora de aceite - marcas: donaldson, ingco, total - modelos: p550774, p550440, fbli2002 - ubicación: punta hermosa - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE MÁS DE 5 ARTÍCULOS DE LÍNEA AMARILLA: FILTROS DE COMBUSTIBLE, BATERÍAS, CARGADOR DE BATERÍA, BOMBA TRASEGADORA DE ACEITE - MARCAS: DONALDSON, INGCO, TOTAL - MODELOS: P550774, P550440, FBLI2002 - UBICACIÓN: PUNTA HERMOSA - FOTOS REFERENCIALES</b><small>Superbid 5031411</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 350<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 350</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:10:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-mas-de-5-articulos-de-linea-amarilla-filtros-de-combustible-baterias-cargador-de-bateria-bomba-trasegadora-de-aceite-marcas-donaldson-ingco-total-modelos-p550774-p550440-fbli2002-ubicacion-punta-hermosa-fotos-referenciales-5031411" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5031409 lote de más de 15 artículos de pintura: gloss, látex, vencelatex, sellador, aguarrás, temple sinolit, rodillos - marcas: cpp, anypsa, vencedor, american colors, toro - modelos: x3 gloss, súper gloss - ubicación: punta hermosa - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE MÁS DE 15 ARTÍCULOS DE PINTURA: GLOSS, LÁTEX, VENCELATEX, SELLADOR, AGUARRÁS, TEMPLE SINOLIT, RODILLOS - MARCAS: CPP, ANYPSA, VENCEDOR, AMERICAN COLORS, TORO - MODELOS: X3 GLOSS, SÚPER GLOSS - UBICACIÓN: PUNTA HERMOSA - FOTOS REFERENCIALES</b><small>Superbid 5031409</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 1,900<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 1,900</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:10:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-mas-de-15-articulos-de-pintura-gloss-latex-vencelatex-sellador-aguarras-temple-sinolit-rodillos-marcas-cpp-anypsa-vencedor-american-colors-toro-modelos-x3-gloss-super-gloss-ubicacion-punta-hermosa-fotos-referenciales-5031409" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5031410 lote de más de 65 artículos de riego: codos pe 16mm, goteros, microtubos, tubo hdpe 250mm, collarines, miniválvulas, válvulas - marcas: rain bird, poelsan, adex - modelos: prs-dial, 150 pga, sdr 17 - ubicación: punta hermosa - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE MÁS DE 65 ARTÍCULOS DE RIEGO: CODOS PE 16MM, GOTEROS, MICROTUBOS, TUBO HDPE 250MM, COLLARINES, MINIVÁLVULAS, VÁLVULAS - MARCAS: RAIN BIRD, POELSAN, ADEX - MODELOS: PRS-DIAL, 150 PGA, SDR 17 - UBICACIÓN: PUNTA HERMOSA - FOTOS REFERENCIALES</b><small>Superbid 5031410</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 2,600<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 2,600</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:11:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-mas-de-65-articulos-de-riego-codos-pe-16mm-goteros-microtubos-tubo-hdpe-250mm-collarines-minivalvulas-valvulas-marcas-rain-bird-poelsan-adex-modelos-prs-dial-150-pga-sdr-17-ubicacion-punta-hermosa-fotos-referenciales-5031410" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5028146 lote de más de 10 artículos de cables eléctricos: cable nyy, lsoh-90+, thw, nlt, cable de tierra, canaletas - marcas: celsa, indeco - modelos: lsoh-90+ ecosafe, thw-90 bh, thw-90 plus - ubicación: punta rocas - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE MÁS DE 10 ARTÍCULOS DE CABLES ELÉCTRICOS: CABLE NYY, LSOH-90+, THW, NLT, CABLE DE TIERRA, CANALETAS - MARCAS: CELSA, INDECO - MODELOS: LSOH-90+ ECOSAFE, THW-90 BH, THW-90 PLUS - UBICACIÓN: PUNTA ROCAS - FOTOS REFERENCIALES</b><small>Superbid 5028146</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 1,600<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 1,600</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:11:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-mas-de-10-articulos-de-cables-electricos-cable-nyy-lsoh-90-thw-nlt-cable-de-tierra-canaletas-marcas-celsa-indeco-modelos-lsoh-90-ecosafe-thw-90-bh-thw-90-plus-ubicacion-punta-rocas-fotos-referenciales-5028146" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5028147 lote de más de 65 artículos de construcción: ladrillos, palos de eucalipto, puntales, thinner, listones, placas de concreto - marcas: anypsa, bosch, truper, forte, 3m - modelos: titanic, f-226, plom-16 - ubicación: punta rocas - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE MÁS DE 65 ARTÍCULOS DE CONSTRUCCIÓN: LADRILLOS, PALOS DE EUCALIPTO, PUNTALES, THINNER, LISTONES, PLACAS DE CONCRETO - MARCAS: ANYPSA, BOSCH, TRUPER, FORTE, 3M - MODELOS: TITANIC, F-226, PLOM-16 - UBICACIÓN: PUNTA ROCAS - FOTOS REFERENCIALES</b><small>Superbid 5028147</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 3,650<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 3,650</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:12:00</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-mas-de-65-articulos-de-construccion-ladrillos-palos-de-eucalipto-puntales-thinner-listones-placas-de-concreto-marcas-anypsa-bosch-truper-forte-3m-modelos-titanic-f-226-plom-16-ubicacion-punta-rocas-fotos-referenciales-5028147" target="_blank">Ver lote ↗</a></td></tr><tr data-search="5028145 lote de más de 85 artículos de riego: miniválvulas, codos, tees, tapones, boquillas, tubos pvc, manguera pe, válvulas - marcas: rain bird, poelsan, a.r.i., américa, tuboplast - modelos: 15 sst, 9 sst, 15 van - ubicación: punta rocas - fotos referenciales  abierto a pujas ">
+<td><span class="badge neutral">ABIERTO A PUJAS</span></td>
+<td><b>LOTE DE MÁS DE 85 ARTÍCULOS DE RIEGO: MINIVÁLVULAS, CODOS, TEES, TAPONES, BOQUILLAS, TUBOS PVC, MANGUERA PE, VÁLVULAS - MARCAS: RAIN BIRD, POELSAN, A.R.I., AMÉRICA, TUBOPLAST - MODELOS: 15 SST, 9 SST, 15 VAN - UBICACIÓN: PUNTA ROCAS - FOTOS REFERENCIALES</b><small>Superbid 5028145</small></td>
+<td>N/D</td><td>N/D</td><td>N/D</td>
+<td>USD 1,500<small>Precio mostrado por la fuente</small></td>
+<td><b>USD 1,500</b><small>Precio base; no es precio final</small></td>
+<td>USD</td><td>0</td><td>2026-10-06 15:12:30</td>
+<td>N/D</td><td><a href="https://www.superbid.com.pe/oferta/lote-de-mas-de-85-articulos-de-riego-minivalvulas-codos-tees-tapones-boquillas-tubos-pvc-manguera-pe-valvulas-marcas-rain-bird-poelsan-ari-america-tuboplast-modelos-15-sst-9-sst-15-van-ubicacion-punta-rocas-fotos-referenciales-5028145" target="_blank">Ver lote ↗</a></td></tr></tbody></table></div>
 </section>
 
 <section id="history" class="panel">
