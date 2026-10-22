@@ -2985,86 +2985,104 @@ actualizar();
 <script>
 function tab(x){const panel=document.getElementById(x);const button=document.querySelector('.tabs button[data-tab="'+x+'"]');if(!panel||!button)return;document.querySelectorAll('.panel').forEach(e=>e.classList.remove('active'));document.querySelectorAll('.tabs button').forEach(e=>e.classList.remove('active'));panel.classList.add('active');button.classList.add('active')}
 function filterRows(body,input){let q=document.getElementById(input).value.toLowerCase();document.querySelectorAll('#'+body+' tr').forEach(r=>r.style.display=r.dataset.search.includes(q)?'':'none')}
-</script><style>
+</script>
+
+
+
+
+
+
+
+
+
+<style id="radar-scroll-v3-style">
 #radar-scroll-controles {
-  position: fixed;
-  right: 22px;
-  bottom: 25px;
-  z-index: 99999;
-  display: flex;
-  gap: 10px;
-  padding: 9px;
-  background: #111827;
-  border: 1px solid #374151;
-  border-radius: 14px;
-  box-shadow: 0 6px 24px rgba(0,0,0,.25);
+    position: fixed;
+    right: 20px;
+    bottom: 25px;
+    z-index: 999999;
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    background: #111827;
+    border-radius: 14px;
+    box-shadow: 0 5px 22px rgba(0,0,0,.3);
 }
 #radar-scroll-controles button {
-  background: #2563eb;
-  color: white;
-  border: none;
-  border-radius: 9px;
-  min-width: 48px;
-  height: 44px;
-  font-size: 23px;
-  cursor: pointer;
-}
-#radar-scroll-controles button:hover {
-  background: #1d4ed8;
+    background: #2563eb;
+    color: white;
+    border: 0;
+    border-radius: 9px;
+    width: 55px;
+    height: 45px;
+    font-size: 24px;
+    cursor: pointer;
 }
 #radar-scroll-controles button:disabled {
-  opacity: .4;
-  cursor: default;
+    opacity: .35;
+    cursor: default;
 }
 </style>
 
-<div id="radar-scroll-controles" aria-label="Desplazamiento horizontal">
-  <button type="button" id="radar-scroll-izq" aria-label="Desplazar tabla a la izquierda">&#9664;</button>
-  <button type="button" id="radar-scroll-der" aria-label="Desplazar tabla a la derecha">&#9654;</button>
+<div id="radar-scroll-controles">
+    <button type="button" id="radar-scroll-izq" title="Desplazar izquierda">&#9664;</button>
+    <button type="button" id="radar-scroll-der" title="Desplazar derecha">&#9654;</button>
 </div>
 
-<script>
+<script id="radar-scroll-v3-script">
 (function () {
-  const izquierda = document.getElementById("radar-scroll-izq");
-  const derecha = document.getElementById("radar-scroll-der");
+    const izq = document.getElementById("radar-scroll-izq");
+    const der = document.getElementById("radar-scroll-der");
 
-  function contenedorActivo() {
-    const candidatos = [...document.querySelectorAll("*")].filter(el => {
-      if (!el.getClientRects().length) return false;
-      const css = getComputedStyle(el);
-      if (!["auto", "scroll"].includes(css.overflowX)) return false;
-      return el.scrollWidth > el.clientWidth + 15;
-    });
+    function objetivo() {
+        const tablas = Array.from(document.querySelectorAll("table"))
+            .filter(t => {
+                const r = t.getBoundingClientRect();
+                return r.width > 0 &&
+                       r.height > 0 &&
+                       r.bottom > 0 &&
+                       r.top < window.innerHeight;
+            });
 
-    const tablas = candidatos.filter(el => el.querySelector("table"));
-    return (tablas.length ? tablas : candidatos)
-      .sort((a, b) => b.clientWidth - a.clientWidth)[0] || null;
-  }
+        for (const tabla of tablas) {
+            let el = tabla.parentElement;
 
-  function actualizar() {
-    const el = contenedorActivo();
-    izquierda.disabled = !el || el.scrollLeft <= 2;
-    derecha.disabled = !el ||
-      el.scrollLeft + el.clientWidth >= el.scrollWidth - 2;
-  }
+            while (el && el !== document.body) {
+                const css = getComputedStyle(el);
 
-  function mover(direccion) {
-    const el = contenedorActivo();
-    if (!el) return;
-    el.scrollBy({
-      left: direccion * Math.max(250, el.clientWidth * .65),
-      behavior: "smooth"
-    });
-    setTimeout(actualizar, 450);
-  }
+                if (
+                    el.scrollWidth > el.clientWidth + 10 &&
+                    ["auto", "scroll"].includes(css.overflowX)
+                ) {
+                    return el;
+                }
+                el = el.parentElement;
+            }
+        }
 
-  izquierda.addEventListener("click", () => mover(-1));
-  derecha.addEventListener("click", () => mover(1));
+        const pagina = document.scrollingElement;
 
-  document.addEventListener("click", () => setTimeout(actualizar, 100));
-  window.addEventListener("resize", actualizar);
-  setInterval(actualizar, 1000);
-  actualizar();
+        if (pagina &&
+            pagina.scrollWidth > pagina.clientWidth + 10) {
+            return pagina;
+        }
+
+        return null;
+    }
+
+    function mover(direccion) {
+        const el = objetivo();
+
+        if (!el) return;
+
+        el.scrollBy({
+            left: direccion * Math.max(300, el.clientWidth * 0.7),
+            behavior: "smooth"
+        });
+    }
+
+    izq.addEventListener("click", () => mover(-1));
+    der.addEventListener("click", () => mover(1));
 })();
 </script>
 </body></html>
