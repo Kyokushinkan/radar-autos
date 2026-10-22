@@ -2804,7 +2804,7 @@ publicado ya excede el nivel económico objetivo antes de incorporar costos real
 <td>$199</td><td>200</td><td><a href="https://www.vmcsubastas.com/oferta/63615" target="_blank">Ver lote ↗</a></td></tr></tbody></table></div>
 <div class="note">Las ofertas no disponibles se conservan como historial, pero no se presentan como oportunidades actuales ni como comparables de mercado vigentes.</div>
 </section>
-<section id="ingresos" class="panel"><h2>Nuevos ingresos · NeoAuto, VMC y Superbid</h2><div class="note">Historial: 1169 registros. Superbid disponible en el historial. Precios de subasta no equivalen a precio final ni rentabilidad FLIP.</div><iframe title="Nuevos ingresos V4" loading="lazy" style="width:100%;height:1150px;border:0;background:#0b1220;border-radius:10px" srcdoc="&lt;!DOCTYPE html&gt;
+<section id="ingresos" class="panel"><h2>Nuevos ingresos · NeoAuto, VMC y Superbid</h2><div class="note">Historial: 1169 registros. Superbid disponible en el historial. Precios de subasta no equivalen a precio final ni rentabilidad FLIP.</div><iframe title="Nuevos ingresos V4.5.1" loading="lazy" style="width:100%;height:1150px;border:0;background:#0b1220;border-radius:10px" srcdoc="&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;es&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;UTF-8&quot;&gt;
@@ -2996,4 +2996,62 @@ actualizar();
 <script>
 function tab(x){const panel=document.getElementById(x);const button=document.querySelector('.tabs button[data-tab="'+x+'"]');if(!panel||!button)return;document.querySelectorAll('.panel').forEach(e=>e.classList.remove('active'));document.querySelectorAll('.tabs button').forEach(e=>e.classList.remove('active'));panel.classList.add('active');button.classList.add('active')}
 function filterRows(body,input){let q=document.getElementById(input).value.toLowerCase();document.querySelectorAll('#'+body+' tr').forEach(r=>r.style.display=r.dataset.search.includes(q)?'':'none')}
-</script></body></html>
+</script>
+<script id="radar-v451-indicadores">
+(function(){
+  const panel = document.getElementById("ingresos");
+  if (!panel) return;
+
+  const iframe = panel.querySelector("iframe");
+  if (!iframe) return;
+
+  const indicador = document.createElement("div");
+  indicador.id = "superbid-v451";
+  indicador.style.cssText =
+    "margin:12px 0;padding:12px 16px;" +
+    "border:1px solid #475569;border-radius:10px;" +
+    "font-weight:600";
+
+  indicador.textContent = "Superbid: 207 anuncios en el historial";
+  iframe.parentNode.insertBefore(indicador, iframe);
+})();
+</script>
+
+<script id="radar-v451-reloj">
+(function(){
+  const reloj = document.createElement("span");
+  reloj.id = "hora-lima-v451";
+  reloj.style.marginLeft = "12px";
+
+  function actualizarReloj(){
+    reloj.textContent = "Hora actual de Lima: " +
+      new Intl.DateTimeFormat("es-PE", {
+        timeZone: "America/Lima",
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false
+      }).format(new Date());
+  }
+
+  const elementos = [...document.querySelectorAll("*")];
+  const fecha = elementos.find(
+    e => e.children.length === 1 &&
+    e.textContent.includes("Actualizado:")
+  );
+
+  if (fecha) {
+    fecha.appendChild(reloj);
+  } else {
+    document.body.insertBefore(reloj, document.body.firstChild);
+  }
+
+  actualizarReloj();
+  setInterval(actualizarReloj, 1000);
+})();
+</script>
+
+</body></html>
