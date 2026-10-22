@@ -3017,40 +3017,56 @@ function filterRows(body,input){let q=document.getElementById(input).value.toLow
 })();
 </script>
 
-<script id="radar-v451-reloj">
+
+
+
+<script id="radar-v451-reloj-final">
 (function(){
-  const reloj = document.createElement("span");
-  reloj.id = "hora-lima-v451";
-  reloj.style.marginLeft = "12px";
+  function iniciar(){
+    const candidatos = [...document.querySelectorAll("body *")];
 
-  function actualizarReloj(){
-    reloj.textContent = "Hora actual de Lima: " +
-      new Intl.DateTimeFormat("es-PE", {
-        timeZone: "America/Lima",
-        day: "2-digit",
-        month: "2-digit",
-        year: "numeric",
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit",
-        hour12: false
-      }).format(new Date());
+    const fecha = candidatos.find(e =>
+      e.children.length <= 2 &&
+      e.textContent.includes("Actualizado:") &&
+      e.textContent.length < 100
+    );
+
+    if (!fecha) {
+      console.error("RADAR: encabezado Actualizado no encontrado");
+      return;
+    }
+
+    let reloj = document.getElementById("hora-lima-v451");
+
+    if (!reloj) {
+      reloj = document.createElement("span");
+      reloj.id = "hora-lima-v451";
+      reloj.style.cssText =
+        "display:inline-block;margin-left:12px;" +
+        "white-space:nowrap;font-weight:600";
+      fecha.appendChild(reloj);
+    }
+
+    function actualizar(){
+      reloj.textContent = " | Lima: " +
+        new Intl.DateTimeFormat("es-PE", {
+          timeZone: "America/Lima",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false
+        }).format(new Date());
+    }
+
+    actualizar();
+    setInterval(actualizar, 1000);
   }
 
-  const elementos = [...document.querySelectorAll("*")];
-  const fecha = elementos.find(
-    e => e.children.length === 1 &&
-    e.textContent.includes("Actualizado:")
-  );
-
-  if (fecha) {
-    fecha.appendChild(reloj);
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", iniciar);
   } else {
-    document.body.insertBefore(reloj, document.body.firstChild);
+    iniciar();
   }
-
-  actualizarReloj();
-  setInterval(actualizarReloj, 1000);
 })();
 </script>
 
