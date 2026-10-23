@@ -2839,4 +2839,96 @@ actualizar();
 <script>
 function tab(x){const panel=document.getElementById(x);const button=document.querySelector('.tabs button[data-tab="'+x+'"]');if(!panel||!button)return;document.querySelectorAll('.panel').forEach(e=>e.classList.remove('active'));document.querySelectorAll('.tabs button').forEach(e=>e.classList.remove('active'));panel.classList.add('active');button.classList.add('active')}
 function filterRows(body,input){let q=document.getElementById(input).value.toLowerCase();document.querySelectorAll('#'+body+' tr').forEach(r=>r.style.display=r.dataset.search.includes(q)?'':'none')}
-</script></body></html>
+</script>
+
+<style id="radar-scroll-v3-style">
+#radar-scroll-controles {
+    position: fixed;
+    right: 20px;
+    bottom: 25px;
+    z-index: 999999;
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    background: #111827;
+    border-radius: 14px;
+    box-shadow: 0 5px 22px rgba(0,0,0,.3);
+}
+#radar-scroll-controles button {
+    background: #2563eb;
+    color: white;
+    border: 0;
+    border-radius: 9px;
+    width: 55px;
+    height: 45px;
+    font-size: 24px;
+    cursor: pointer;
+}
+#radar-scroll-controles button:disabled {
+    opacity: .35;
+    cursor: default;
+}
+</style>
+
+<div id="radar-scroll-controles">
+    <button type="button" id="radar-scroll-izq" title="Desplazar izquierda">&#9664;</button>
+    <button type="button" id="radar-scroll-der" title="Desplazar derecha">&#9654;</button>
+</div>
+
+<script id="radar-scroll-v3-script">
+(function () {
+    const izq = document.getElementById("radar-scroll-izq");
+    const der = document.getElementById("radar-scroll-der");
+
+    function objetivo() {
+        const tablas = Array.from(document.querySelectorAll("table"))
+            .filter(t => {
+                const r = t.getBoundingClientRect();
+                return r.width > 0 &&
+                       r.height > 0 &&
+                       r.bottom > 0 &&
+                       r.top < window.innerHeight;
+            });
+
+        for (const tabla of tablas) {
+            let el = tabla.parentElement;
+
+            while (el && el !== document.body) {
+                const css = getComputedStyle(el);
+
+                if (
+                    el.scrollWidth > el.clientWidth + 10 &&
+                    ["auto", "scroll"].includes(css.overflowX)
+                ) {
+                    return el;
+                }
+                el = el.parentElement;
+            }
+        }
+
+        const pagina = document.scrollingElement;
+
+        if (pagina &&
+            pagina.scrollWidth > pagina.clientWidth + 10) {
+            return pagina;
+        }
+
+        return null;
+    }
+
+    function mover(direccion) {
+        const el = objetivo();
+
+        if (!el) return;
+
+        el.scrollBy({
+            left: direccion * Math.max(300, el.clientWidth * 0.7),
+            behavior: "smooth"
+        });
+    }
+
+    izq.addEventListener("click", () => mover(-1));
+    der.addEventListener("click", () => mover(1));
+})();
+</script>
+</body></html>
